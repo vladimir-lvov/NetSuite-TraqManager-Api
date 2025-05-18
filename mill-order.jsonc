@@ -1,0 +1,122 @@
+{
+  // ===========================
+  // Purchase Order Header
+  // ===========================
+
+  "purchaseOrderHeader": {
+    "millOrderNumber": "098765",           // Mill / ERP master order
+    "purchaseOrderNumber": "PO12345",      // Customer’s PO reference
+    "orderStatus": "New",                  // New | Amended | Cancelled | Completed
+    "version": 1,                          // Document version (1 = first issue)
+    "purchaseOrderIssuedDate": "2025-05-17T10:15:00-04:00",
+
+    /* ---------- Buyer Party – see §Templates/Party ---------- */
+    "buyerParty": {
+      "partyIdentifiers": [
+        { "partyIdentifierType": "Internal", "value": "BUYER123" },
+        { "partyIdentifierType": "GLN",      "value": "5412345000018" }
+      ],
+      "nameAddress": {
+        "name1": "Transcon Publishing Inc.",
+        "address1": "123 Print Lane",
+        "city": "Toronto",
+        "region": "ON",
+        "postalCode": "M4B 1B3",
+        "country": "CA"
+      },
+      "contacts": [
+        {
+          "contactType": "Purchasing",
+          "contactName": "Patricia Nguyen",
+          "email": "patricia.nguyen@transconpublishing.com"
+        }
+      ],
+		"notes": [
+		{ "noteType": "Shipping", "content": "Credit check before shipping" }
+	  ]
+	}
+
+    "internal": "false",           
+    "orderPurpose": "Customer",            // Customer | Customer Cull | Stock | Stock Cull
+    "orderHeaderNotes": [
+      { "noteType": "Planner", "content": "Urgent order – please expedite delivery." }
+    ]
+  },
+
+  // ===========================
+  // Purchase Order Line Items
+  // ===========================
+  "lineItems": [
+    {
+      "millOrderLineItemNumber": 1,
+      "purchaseOrderLineItemNumber": 1,
+      "lineItemStatusType": "New",
+
+      "product": {
+        "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
+        "grade": "NPA59ST",
+        "reelWidth":   { "value": 1275, "uom": "mm" },
+        "reelDiameter":{ "value": 1150, "uom": "mm" },
+        "core":        "NPLD",
+        "wrapType":    "AA",
+        "reelPerPack": 1
+      },
+
+      "labelMark": "WALGREENS",
+      "quantity":  { "value": 100, "uom": "MetricTon" },
+
+      "orderItemNotes": [
+        { "noteType": "Packaging", "content": "Deliver in moisture-resistant packaging." }
+      ],
+
+      "millShipmentSchedule ": [
+        {
+          "shipmentRequestedDate": "2025-07-01",
+          "quantity": { "value": 50, "uom": "MetricTon" },
+          "shipmentNotes": [
+            { "noteType": "General", "content": "First half of order" }
+          ]
+        },
+        {
+          "shipmentRequestedDate": "2025-07-15",
+          "quantity": { "value": 70, "uom": "MetricTon" },
+          "shipmentNotes": [
+            { "noteType": "General", "content": "Second half of order" }
+          ]
+        }
+      ]
+    },
+
+    /* ----- second line (short) ----- */
+    {
+      "millOrderLineItemNumber": 2,
+      "purchaseOrderLineItemNumber": 2,
+      "lineItemStatusType": "New",
+
+      "product": {
+        "sku": "NPB66HT-1000-0800-NSTA-BB-RPP2",
+        "grade": "NPB66HT",
+        "reelWidth":   { "value": 1000, "uom": "mm" },
+        "reelDiameter":{ "value": 800,  "uom": "mm" },
+        "core": "NSTA",
+        "wrapType": "BB",
+        "reelPerPack": 2
+      },
+
+      "labelMark": "WALGREENS",
+      "quantity": { "value": 6, "uom": "Reel" },
+      "orderItemNotes": [
+        { "noteType": "Handling", "content": "Pack reels securely to prevent damage." }
+      ],
+      "millShipmentSchedule ": [
+        {
+          "shipmentRequestedDate": "2025-07-15",
+          "quantity": { "value": 6, "uom": "Reel" },
+          "shipmentNotes": [
+            { "noteType": "General", "content": "Single shipment for this item" }
+          ]
+        }
+      ]
+    }
+  ]
+}
