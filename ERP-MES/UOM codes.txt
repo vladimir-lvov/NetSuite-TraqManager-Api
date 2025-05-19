@@ -1,0 +1,32 @@
+| Code                 | Meaning                              | Typical paper-industry usage                         |
+| -------------------- | ------------------------------------ | ---------------------------------------------------- |
+|   MetricTon          | 1 000 kg                             | Pulp, roll, sheet weight<br>(a.k.a. “tonne”,   MT  ) |
+|   Kilogram           | kg                                   | Lab samples, additives                               |
+|   Gram               | g                                    | Grammage checks, fillers                             |
+|   Pound              | lb                                   | U.S. weight reporting                                |
+|   Ounce              | oz                                   | Small samples                                        |
+|   Reel               | one finished reel / roll             | Finished-goods ordering                              |
+|   Roll               | synonym of Reel (interchangeable)    |                                                      |
+|   Ream               | 500 sheets (unless otherwise agreed) | Cut-size office paper                                |
+|   Sheet              | single sheet                         | Specialty orders                                     |
+|   Bundle             | factory-defined bundle               | Tissue / packaging                                   |
+|   Package            | generic pack                         | Retail packs                                         |
+|   Piece              | generic piece                        | Misc. items                                          |
+|   Lot                | production lot                       | Bulk transactions                                    |
+|   Meter              | m                                    | Trim width, core length                              |
+|   Centimeter         | cm                                   | Lab/QA dims                                          |
+|   Millimeter         | mm                                   | Reel width, diameter                                 |
+|   Inch               | in                                   | US customers                                         |
+|   SquareMeter        | m²                                   | Coated-area pricing                                  |
+|   SquareCentimeter   | cm²                                  | QA spot checks                                       |
+|   SquareInch         | in²                                  | US QA                                                |
+|   CubicMeter         | m³                                   | Wood chips / pallets                                 |
+|   Liter              | L                                    | Process chemicals                                    |
+|   Milliliter         | mL                                   | Lab chemicals                                        |
+|   Gallon             | US gal                               | Bulk liquids US                                      |
+|   CubicFoot          | ft³                                  | Lumber, logs                                         |
+|   Hour               | h                                    | Machine time                                         |
+|   Minute             | min                                  | Downtime                                             |
+|   Second             | s                                    | Test duration                                        |
+|   Percent            | %                                    | Moisture, ash                                        |
+|   None               | scalar value (dimensionless)         | Brightness, pH                                       |
