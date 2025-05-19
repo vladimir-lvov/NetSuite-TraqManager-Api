@@ -2,10 +2,10 @@
   // ===========================
   // Load Header
   // ===========================
-  "loadNumber": "FN0626H5",                    // Unique load ID
-  "loadStatus": "New",                         // New | Amended | Cancelled
-  "isInternal ": false,                        // Shipped to the external warehouse or to the mill. No invoicing
-  "version": 1,                                // Document version
+  "loadNumber":  "FN0626H5",                  // Unique load ID
+  "loadStatus":  "New",                       // New | Amended | Cancelled
+  "isInternal":  false,                       // Shipped to the external warehouse or to the mill. No invoicing
+  "version":     1,                           // Document version
 
   // Optional links back to order(s)
   "references": [
@@ -35,8 +35,8 @@
       }
     ]
   },
- 
-  /* ---------- shipper (origin) ---------- */
+
+  /* ---------- Shipper (Origin) ---------- */
   "shipperParty": {
     "partyIdentifiers": [
       { "partyIdentifierType": "Internal", "value": "XYZ-001" }
@@ -59,7 +59,7 @@
     ]
   },
 
-  /* ---------- consignee (Ship To) ---------- */
+  /* ---------- Consignee (Ship-to) ---------- */
   "consigneeParty": {
     "partyIdentifiers": [
       { "partyIdentifierType": "Internal", "value": "ABC-987" }
@@ -82,7 +82,7 @@
     ]
   },
 
-  /* ---------- carrier (transport provider) ---------- */
+  /* ---------- Carrier (Transport provider) ---------- */
   "carrierParty": {
     "partyIdentifiers": [
       { "partyIdentifierType": "SCAC", "value": "L123" }
@@ -106,7 +106,7 @@
   },
 
   // ===========================
-  // Stops DateTime Windows
+  // Stops – Date/time windows
   // ===========================
   "shipmentDateWindow": {
     "earliestDateTime": "2025-05-20T08:00:00-04:00",
@@ -121,8 +121,8 @@
   // Transport requirements
   // ===========================
   "transportInformation": {
-    "transportMode": "Truck",                          // Truck | Rail | Intermodal
-    "equipmentType": "TRTAMDV53"                       // vehicle code
+    "transportMode": "Truck",                 // Truck | Rail | Intermodal
+    "equipmentType": "TRTAMDV53"              // Vehicle/body code
   },
 
   // ===========================
@@ -130,22 +130,22 @@
   // ===========================
   "loadLineItems": [
     {
-      "millOrderNumber": "098765",
-      "millOrderLineItemNumber": 1,
-      "quantity": { "value": 10, "uom": "Reel" },      // first half of order
+      "millOrderNumber":          "098765",
+      "millOrderLineItemNumber":  1,
+      "quantity":  { "value": 10, "uom": "Reel" },  // First half of order
       "shipInFull": true
     },
     {
-      "millOrderNumber": "098765",
-      "millOrderLineItemNumber": 2,
-      "quantity": { "value": 20, "uom": "Reel" },      // second half of order
+      "millOrderNumber":          "098765",
+      "millOrderLineItemNumber":  2,
+      "quantity":  { "value": 20, "uom": "Reel" },  // Second half of order
       "shipInFull": true
     },
     {
-      "millOrderNumber": "098766",
-      "millOrderLineItemNumber": 1,
-      "quantity": { "value": 6, "uom": "Reel" },
-      "shipInFull": false                              // filler
+      "millOrderNumber":          "098766",
+      "millOrderLineItemNumber":  1,
+      "quantity":  { "value": 6,  "uom": "Reel" },
+      "shipInFull": false                          // Filler
     }
   ],
 
@@ -156,8 +156,7 @@
     { "noteType": "Carrier", "content": "Deliver before 3:00 PM" },
     { "noteType": "Safety",  "content": "Driver must secure load and follow mill safety rules." }
   ],
-  
-  
+
   // ===========================
   // Certifications
   // ===========================
@@ -165,5 +164,4 @@
     { "certification": "PFC" },
     { "certification": "SFC" }
   ]
-  
 }
