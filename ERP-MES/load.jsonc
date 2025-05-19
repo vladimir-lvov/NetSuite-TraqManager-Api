@@ -155,7 +155,7 @@
   "loadNotes": [
     { "noteType": "Carrier", "content": "Deliver before 3:00 PM" },
     { "noteType": "Safety",  "content": "Driver must secure load and follow mill safety rules." }
-  ]
+  ],
   
   
   // ===========================
