@@ -1,0 +1,169 @@
+{
+  // ===========================
+  // Load Header
+  // ===========================
+  "loadNumber": "FN0626H5",                    // Unique load ID
+  "loadStatus": "New",                         // New | Amended | Cancelled
+  "isInternal ": false,                        // Shipped to the external warehouse or to the mill. No invoicing
+  "version": 1,                                // Document version
+
+  // Optional links back to order(s)
+  "references": [
+    { "referenceType": "millOrderNumber",     "referenceValue": "098765" },
+    { "referenceType": "purchaseOrderNumber", "referenceValue": "PO12345" }
+  ],
+
+  /* ---------- Buyer (Sold to) ---------- */
+  "buyerParty": {
+    "partyIdentifiers": [
+      { "partyIdentifierType": "Internal", "value": "BUYER123" },
+      { "partyIdentifierType": "GLN",      "value": "5412345000018" }
+    ],
+    "nameAddress": {
+      "name1":      "Transcon Publishing Inc.",
+      "address1":   "123 Print Lane",
+      "city":       "Toronto",
+      "region":     "ON",
+      "postalCode": "M4B 1B3",
+      "country":    "CA"
+    },
+    "contacts": [
+      {
+        "contactType": "Purchasing",
+        "contactName": "Patricia Nguyen",
+        "email":       "patricia.nguyen@transconpublishing.com"
+      }
+    ]
+  },
+ 
+  /* ---------- shipper (origin) ---------- */
+  "shipperParty": {
+    "partyIdentifiers": [
+      { "partyIdentifierType": "Internal", "value": "XYZ-001" }
+    ],
+    "nameAddress": {
+      "name1":      "XYZ Paper Mill Co.",
+      "address1":   "100 Paper Mill Rd",
+      "city":       "Montreal",
+      "region":     "QC",
+      "postalCode": "H3A 1A2",
+      "country":    "CA"
+    },
+    "contacts": [
+      {
+        "contactType": "ShippingOffice",
+        "contactName": "John Doe",
+        "phone":       "+1 514-555-1234",
+        "email":       "johndoe@xyzpaper.com"
+      }
+    ]
+  },
+
+  /* ---------- consignee (Ship To) ---------- */
+  "consigneeParty": {
+    "partyIdentifiers": [
+      { "partyIdentifierType": "Internal", "value": "ABC-987" }
+    ],
+    "nameAddress": {
+      "name1":      "ABC Printing Ltd.",
+      "address1":   "250 Printing Ave",
+      "city":       "Toronto",
+      "region":     "ON",
+      "postalCode": "M5J 2N1",
+      "country":    "CA"
+    },
+    "contacts": [
+      {
+        "contactType": "ReceivingDock",
+        "contactName": "Jane Smith",
+        "phone":       "+1 416-555-7890",
+        "email":       "jsmith@abcprinting.com"
+      }
+    ]
+  },
+
+  /* ---------- carrier (transport provider) ---------- */
+  "carrierParty": {
+    "partyIdentifiers": [
+      { "partyIdentifierType": "SCAC", "value": "L123" }
+    ],
+    "nameAddress": {
+      "name1":      "123 Logistics Inc.",
+      "address1":   "800 Transport Blvd",
+      "city":       "Ottawa",
+      "region":     "ON",
+      "postalCode": "K1P 1A5",
+      "country":    "CA"
+    },
+    "contacts": [
+      {
+        "contactType": "Dispatch",
+        "contactName": "Dispatch Team",
+        "phone":       "+1 800-555-0001",
+        "email":       "dispatch@123logistics.com"
+      }
+    ]
+  },
+
+  // ===========================
+  // Stops DateTime Windows
+  // ===========================
+  "shipmentDateWindow": {
+    "earliestDateTime": "2025-05-20T08:00:00-04:00",
+    "latestDateTime":   "2025-05-20T17:00:00-04:00"
+  },
+  "deliveryDateWindow": {
+    "earliestDateTime": "2025-05-22T09:00:00-04:00",
+    "latestDateTime":   "2025-05-22T17:00:00-04:00"
+  },
+
+  // ===========================
+  // Transport requirements
+  // ===========================
+  "transportInformation": {
+    "transportMode": "Truck",                          // Truck | Rail | Intermodal
+    "equipmentType": "TRTAMDV53"                       // vehicle code
+  },
+
+  // ===========================
+  // Line items being shipped
+  // ===========================
+  "loadLineItems": [
+    {
+      "millOrderNumber": "098765",
+      "millOrderLineItemNumber": 1,
+      "quantity": { "value": 10, "uom": "Reel" },      // first half of order
+      "shipInFull": true
+    },
+    {
+      "millOrderNumber": "098765",
+      "millOrderLineItemNumber": 2,
+      "quantity": { "value": 20, "uom": "Reel" },      // second half of order
+      "shipInFull": true
+    },
+    {
+      "millOrderNumber": "098766",
+      "millOrderLineItemNumber": 1,
+      "quantity": { "value": 6, "uom": "Reel" },
+      "shipInFull": false                              // filler
+    }
+  ],
+
+  // ===========================
+  // Load-level notes
+  // ===========================
+  "loadNotes": [
+    { "noteType": "Carrier", "content": "Deliver before 3:00 PM" },
+    { "noteType": "Safety",  "content": "Driver must secure load and follow mill safety rules." }
+  ]
+  
+  
+  // ===========================
+  // Certifications
+  // ===========================
+  "certifications": [
+    { "certification": "PFC" },
+    { "certification": "SFC" }
+  ]
+  
+}
