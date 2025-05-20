@@ -5,8 +5,7 @@
 |   Gram               | g                                    | Grammage checks, fillers                             |
 |   Pound              | lb                                   | U.S. weight reporting                                |
 |   Ounce              | oz                                   | Small samples                                        |
-|   Reel               | one finished reel / roll             | Finished-goods ordering                              |
-|   Roll               | synonym of Reel (interchangeable)    |                                                      |
+|   Roll               | one finished reel / roll             | Finished-goods ordering                              |
 |   Ream               | 500 sheets (unless otherwise agreed) | Cut-size office paper                                |
 |   Sheet              | single sheet                         | Specialty orders                                     |
 |   Bundle             | factory-defined bundle               | Tissue / packaging                                   |

@@ -53,11 +53,11 @@
       "product": {
         "sku":          "NPA59ST-1275-1150-NPLD-AA-RPP1",
         "grade":        "NPA59ST",
-        "reelWidth":    { "value": 1275, "uom": "mm" },
-        "reelDiameter": { "value": 1150, "uom": "mm" },
+        "rollWidth":    { "value": 1275, "uom": "mm" },
+        "rollDiameter": { "value": 1150, "uom": "mm" },
         "core":         "NPLD",
         "wrapType":     "AA",
-        "reelPerPack":  1
+        "rollPerPack":  1
       },
 
       "labelMark": "WALGREENS",
@@ -95,24 +95,24 @@
       "product": {
         "sku":          "NPB66HT-1000-0800-NSTA-BB-RPP2",
         "grade":        "NPB66HT",
-        "reelWidth":    { "value": 1000, "uom": "mm" },
-        "reelDiameter": { "value": 800,  "uom": "mm" },
+        "rollWidth":    { "value": 1000, "uom": "mm" },
+        "rollDiameter": { "value": 800,  "uom": "mm" },
         "core":         "NSTA",
         "wrapType":     "BB",
-        "reelPerPack":  2
+        "rollPerPack":  2
       },
 
       "labelMark": "LIBERTY TIMES",
-      "quantity":  { "value": 6, "uom": "Reel" },
+      "quantity":  { "value": 6, "uom": "Roll" },
 
       "orderItemNotes": [
-        { "noteType": "Handling", "note": "Pack reels securely to prevent damage." }
+        { "noteType": "Handling", "note": "Pack rolls securely to prevent damage." }
       ],
 
       "shipmentSchedule": [
         {
           "shipmentRequestedDate": "2025-07-15",
-          "quantity":             { "value": 6, "uom": "Reel" },
+          "quantity":             { "value": 6, "uom": "Roll" },
           "shipmentNotes": [
             { "noteType": "General", "note": "Single shipment for this item" }
           ]

@@ -132,19 +132,19 @@
     {
       "millOrderNumber":          "098765",
       "millOrderLineItemNumber":  1,
-      "quantity":  { "value": 10, "uom": "Reel" },  // First half of order
+      "quantity":  { "value": 10, "uom": "Roll" },  // First half of order
       "shipInFull": true
     },
     {
       "millOrderNumber":          "098765",
       "millOrderLineItemNumber":  2,
-      "quantity":  { "value": 20, "uom": "Reel" },  // Second half of order
+      "quantity":  { "value": 20, "uom": "Roll" },  // Second half of order
       "shipInFull": true
     },
     {
       "millOrderNumber":          "098766",
       "millOrderLineItemNumber":  1,
-      "quantity":  { "value": 6,  "uom": "Reel" },
+      "quantity":  { "value": 6,  "uom": "Roll" },
       "shipInFull": false                          // Filler
     }
   ],

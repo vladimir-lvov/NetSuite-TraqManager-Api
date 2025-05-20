@@ -8,7 +8,7 @@ All field names are **camelCase**.
 ## Table of Contents
 1. [Party](#1-party)  
 2. [Contact](#2-contact)  
-3. [Product – Reel](#3-product—reel)  
+3. [Product – Roll](#3-product—roll)  
 4. [Quantity](#4-quantity)  
 5. [Note](#5-note)  
 
@@ -55,7 +55,7 @@ All field names are **camelCase**.
 
 ---
 
-## 3 Product — Reel
+## 3 Product — Roll
 
 ```jsonc
 {
@@ -63,12 +63,12 @@ All field names are **camelCase**.
   "grade":        "NPA59ST",                          // mill grade code
 
   // width & diameter use the standard Quantity template
-  "reelWidth":    { "value": 1275, "uom": "mm" },
-  "reelDiameter": { "value": 1150, "uom": "mm" },
+  "rollWidth":    { "value": 1275, "uom": "mm" },
+  "rollDiameter": { "value": 1150, "uom": "mm" },
 
   "core":         "NPLD",                             // core type
   "wrapType":     "AA",                               // packaging style
-  "reelPerPack":  1                                   // rolls per pack
+  "rollPerPack":  1                                   // rolls per pack
 }
 ```
 *(Swap fields or extend for sheet, pallet, or finished-goods SKUs.)*
