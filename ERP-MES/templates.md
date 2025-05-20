@@ -24,6 +24,7 @@ All field names are **camelCase**.
   ],
   "nameAddress": {                      // legal name & postal address
     "name1":      "Company / Site name",
+    "name2":      null,                 // optional nickname
     "address1":   "Street line 1",
     "address2":   null,                 // optional second line
     "city":       "City",
