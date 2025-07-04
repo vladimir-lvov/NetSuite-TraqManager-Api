@@ -1,0 +1,54 @@
+{
+  "partyIdentifiers": [
+    { "partyIdentifierType": "Internal", "value": "BUYER123" },
+    { "partyIdentifierType": "GLN",      "value": "5412345000018" }
+  ],
+  "active": true,
+  "currencyCode": "USD",
+  "nameAddress": {
+    "name1":      "Transcon Publishing Inc.",
+    "address1":   "123 Print Lane",
+    "city":       "Toronto",
+    "region":     "ON",
+    "postalCode": "M4B 1B3",
+    "country":    "CA"
+  },
+  "salesReps": [
+    {
+      "salesRepId":    "21431",
+      "salesRepType":  "Internal",
+      "salesRepName":  "Dale Band",
+      "salesRepEmail": "daleb@albertanewsprint.com",
+      "active":        true
+    }
+  ],
+  "contacts": [
+    {
+      "contactId":    "21431",
+      "contactType":  "Purchasing",
+      "contactName":  "Patricia Nguyen",
+      "contactEmail": "patricia.nguyen@transconpublishing.com",
+      "active":       true
+    }
+  ],
+  "ediIdentifiers": [
+    {
+      "ediName":      "NORKOL-Warehouse",
+      "partnerEdiId": "ZZNORKOL",
+      "soldToEdiId":  "NORKOL3488",
+      "shipToEdiId":  "NORKOL"
+    }
+  ],
+  "notes": [
+    { "noteType": "Shipping", "note": "Credit check before shipping" }
+  ],
+  "attributes": [
+    { "attributeType": "approved", "attributeValue": "true" }
+  ],
+  "certifications": [
+    {
+      "certificationType": "PFC",
+      "effectiveDate":     "2025-01-01"
+    }
+  ]
+}
