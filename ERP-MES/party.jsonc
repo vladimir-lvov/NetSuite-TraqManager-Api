@@ -33,7 +33,7 @@
   ],
   "ediIdentifiers": [
     {
-      "ediName":      "NORKOL-Warehouse",
+      "name":      "NORKOL-Warehouse",
       "partnerEdiId": "ZZNORKOL",
       "soldToEdiId":  "NORKOL3488",
       "shipToEdiId":  "NORKOL"
