@@ -3,6 +3,7 @@
   // Load Header
   // ===========================
   "loadNumber":  "FN0626H5",                  // Unique load ID
+  "ReferenceNumber":  "RR444",                // Optional customer reference
   "loadStatus":  "New",                       // New | Amended | Cancelled
   "isInternal":  false,                       // Shipped to the external warehouse or to the mill. No invoicing
   "version":     1,                           // Document version
