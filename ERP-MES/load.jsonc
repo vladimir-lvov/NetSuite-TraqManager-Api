@@ -4,7 +4,6 @@
   // ===========================
   "loadNumber":  "FN0626H5",                  // Unique load ID
   "loadStatus":  "New",                       // New | Amended | Cancelled
-  "isInternal":  false,                       // Shipped to the external warehouse or to the mill. No invoicing
   "version":     1,                           // Document version
 
   //Option Joint Load
