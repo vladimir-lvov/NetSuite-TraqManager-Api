@@ -3,13 +3,19 @@
   // Load Header
   // ===========================
   "loadNumber":  "FN0626H5",                  // Unique load ID
-  "ReferenceNumber":  "RR444",                // Optional customer reference
   "loadStatus":  "New",                       // New | Amended | Cancelled
   "isInternal":  false,                       // Shipped to the external warehouse or to the mill. No invoicing
   "version":     1,                           // Document version
 
+  //Option Joint Load
+  "jointLoad": {
+    "jointLoadNumber": "J00033",
+    "stopOrder":       1
+  },
+ 
   // Optional links back to order(s)
   "references": [
+    { "referenceType": "customerLoadNumber",     "referenceValue": "45525" },
     { "referenceType": "millOrderNumber",     "referenceValue": "098765" },
     { "referenceType": "purchaseOrderNumber", "referenceValue": "PO12345" }
   ],
