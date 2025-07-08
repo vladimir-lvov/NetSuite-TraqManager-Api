@@ -3,6 +3,7 @@
     { "partyIdentifierType": "Internal", "value": "BUYER123" },
     { "partyIdentifierType": "GLN",      "value": "5412345000018" }
   ],
+  "partyType": "Customer",
   "active": true,
   "currencyCode": "USD",
   "nameAddress": {
