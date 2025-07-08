@@ -6,6 +6,7 @@
     "millOrderNumber":     "098765",   // Mill / ERP master order
     "purchaseOrderNumber": "PO12345",  // Customer’s PO reference
     "orderStatus":         "New",      // New | Amended | Cancelled | Completed
+    "orderType":           "Standard", // Standard | Cull | Replenish | Internal
     "version":             1,          // Document version (1 = first issue)
 
     /* ---------- Buyer Party ---------- */
