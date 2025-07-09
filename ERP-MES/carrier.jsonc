@@ -1,0 +1,52 @@
+{
+	
+   "carrierId": "0000",
+   "name": "Boison" 
+   "active": true,
+   "currency": "Truck",
+   "transportationMode": "Truck",   
+  
+	
+  "address": {
+    "address1":   "123 Print Lane",
+    "address2":   "Suite 22",
+    "city":       "Toronto",
+    "region":     "ON",
+    "postalCode": "M4B 1B3",
+    "country":    "CA"
+  },
+ 
+  "shipAddresses":
+  [
+	"shipAddressId": "45235"
+	"name": "West Gates",
+	{
+		"address": {}
+	}	
+  ],
+  
+  "contacts": [
+    {
+      "contactId":    "21431",
+      "contactType":  "Purchasing",
+      "contactName":  "Patricia Nguyen",
+      "contactEmail": "patricia.nguyen@transconpublishing.com",
+      "active":       true
+    }
+  ],
+  
+  "ediIdentifiers": [
+    {
+      "name":      "NORKOL-Warehouse",
+      "partnerEdiId": "ZZNORKOL",
+      "soldToEdiId":  "NORKOL3488",
+      "shipToEdiId":  "NORKOL"
+    }
+  ],
+  "notes": [
+    { "noteType": "Shipping", "note": "Credit check before shipping" }
+  ],
+  "attributes": [
+    { "attributeType": "approved", "attributeValue": "true" }
+  ]
+}
