@@ -2,133 +2,62 @@
   // ===========================
   // Load Header
   // ===========================
-  "loadNumber":  "FN0626H5",                  // Unique load ID
-  "loadStatus":  "New",                       // New | Amended | Cancelled
-  "version":     1,                           // Document version
+  "loadNumber": "FN0626H5",          // Unique load ID
+  "loadStatus": "New",               // New | Amended | Cancelled
+  "version": 1,                      // Document version
 
-  //Option Joint Load
+  // Option: Joint Load
   "jointLoad": {
     "jointLoadNumber": "J00033",
-    "stopOrder":       1
+    "stopOrder": 1
   },
- 
+
   // Optional links back to order(s)
   "references": [
-    { "referenceType": "customerLoadNumber",     "referenceValue": "45525" },
-    { "referenceType": "millOrderNumber",     "referenceValue": "098765" },
-    { "referenceType": "purchaseOrderNumber", "referenceValue": "PO12345" }
+    { "referenceType": "customerLoadNumber", "referenceValue": "45525" },
+    { "referenceType": "millOrderNumber",    "referenceValue": "098765" },
+    { "referenceType": "purchaseOrderNumber","referenceValue": "PO12345" }
   ],
 
-  /* ---------- Buyer (Sold to) ---------- */
-  "buyerParty": {
-    "partyIdentifiers": [
-      { "partyIdentifierType": "Internal", "value": "BUYER123" },
-      { "partyIdentifierType": "GLN",      "value": "5412345000018" }
-    ],
-    "nameAddress": {
-      "name1":      "Transcon Publishing Inc.",
-      "address1":   "123 Print Lane",
-      "city":       "Toronto",
-      "region":     "ON",
-      "postalCode": "M4B 1B3",
-      "country":    "CA"
-    },
-    "contacts": [
-      {
-        "contactType": "Purchasing",
-        "contactName": "Patricia Nguyen",
-        "email":       "patricia.nguyen@transconpublishing.com"
-      }
-    ]
+  /* ---------- Parties ---------- */
+  "customer": {                      // Sold-to / billing party
+    "customerId": "26636",           // ERP customer code
+    "name": "Norkol Inc."
   },
 
-  /* ---------- Shipper (Origin) ---------- */
-  "shipperParty": {
-    "partyIdentifiers": [
-      { "partyIdentifierType": "Internal", "value": "XYZ-001" }
-    ],
-    "nameAddress": {
-      "name1":      "XYZ Paper Mill Co.",
-      "address1":   "100 Paper Mill Rd",
-      "city":       "Montreal",
-      "region":     "QC",
-      "postalCode": "H3A 1A2",
-      "country":    "CA"
-    },
-    "contacts": [
-      {
-        "contactType": "ShippingOffice",
-        "contactName": "John Doe",
-        "phone":       "+1 514-555-1234",
-        "email":       "johndoe@xyzpaper.com"
-      }
-    ]
+  "shipper": {                       // Origin facility
+    "shipperId": "6770",
+    "name": "ANC Warehouse"
   },
 
-  /* ---------- Consignee (Ship-to) ---------- */
-  "consigneeParty": {
-    "partyIdentifiers": [
-      { "partyIdentifierType": "Internal", "value": "ABC-987" }
-    ],
-    "nameAddress": {
-      "name1":      "ABC Printing Ltd.",
-      "address1":   "250 Printing Ave",
-      "city":       "Toronto",
-      "region":     "ON",
-      "postalCode": "M5J 2N1",
-      "country":    "CA"
-    },
-    "contacts": [
-      {
-        "contactType": "ReceivingDock",
-        "contactName": "Jane Smith",
-        "phone":       "+1 416-555-7890",
-        "email":       "jsmith@abcprinting.com"
-      }
-    ]
+  "consignee": {                     // Final delivery location
+    "consigneeId": "5445",
+    "name": "Norkol"
+  },
+
+  "shipAddress": {                   // Optional alternate ship-to (use when different from consignee)
+    "shipAddressId": "45235",
+    "name": "West Gates"
   },
 
   /* ---------- Carrier (Transport provider) ---------- */
-  "carrierParty": {
-    "partyIdentifiers": [
-      { "partyIdentifierType": "SCAC", "value": "L123" }
-    ],
-    "nameAddress": {
-      "name1":      "123 Logistics Inc.",
-      "address1":   "800 Transport Blvd",
-      "city":       "Ottawa",
-      "region":     "ON",
-      "postalCode": "K1P 1A5",
-      "country":    "CA"
-    },
-    "contacts": [
-      {
-        "contactType": "Dispatch",
-        "contactName": "Dispatch Team",
-        "phone":       "+1 800-555-0001",
-        "email":       "dispatch@123logistics.com"
-      }
-    ]
+  "carrier": {
+    "carrierId": "5545",
+    "name": "Bison"
   },
 
   // ===========================
   // Stops – Date/time windows
   // ===========================
-  "shipmentDateWindow": {
-    "earliestDateTime": "2025-05-20T08:00:00-04:00",
-    "latestDateTime":   "2025-05-20T17:00:00-04:00"
-  },
-  "deliveryDateWindow": {
-    "earliestDateTime": "2025-05-22T09:00:00-04:00",
-    "latestDateTime":   "2025-05-22T17:00:00-04:00"
-  },
+  "dateToShip": "2025-07-01",
+  "dateToDeliver": "2025-07-01",
 
   // ===========================
   // Transport requirements
   // ===========================
   "transportInformation": {
-    "transportMode": "Truck",                 // Truck | Rail | Intermodal
-    "equipmentType": "TRTAMDV53"              // Vehicle/body code
+    "transportMode": "Truck",        // Truck | Rail | Intermodal
+    "equipmentType": "TRTAMDV53"     // Vehicle/body code
   },
 
   // ===========================
@@ -136,21 +65,21 @@
   // ===========================
   "loadLineItems": [
     {
-      "millOrderNumber":          "098765",
-      "millOrderLineItemNumber":  1,
-      "quantity":  { "value": 10, "uom": "Roll" },  // First half of order
+      "millOrderNumber": "098765",
+      "millOrderLineItemNumber": 1,
+      "quantity": { "value": 10, "uom": "Roll" },  // First half of order
       "shipInFull": true
     },
     {
-      "millOrderNumber":          "098765",
-      "millOrderLineItemNumber":  2,
-      "quantity":  { "value": 20, "uom": "Roll" },  // Second half of order
+      "millOrderNumber": "098765",
+      "millOrderLineItemNumber": 2,
+      "quantity": { "value": 20, "uom": "Roll" },  // Second half of order
       "shipInFull": true
     },
     {
-      "millOrderNumber":          "098766",
-      "millOrderLineItemNumber":  1,
-      "quantity":  { "value": 6,  "uom": "Roll" },
+      "millOrderNumber": "098766",
+      "millOrderLineItemNumber": 1,
+      "quantity": { "value": 6, "uom": "Roll" },
       "shipInFull": false                          // Filler
     }
   ],
