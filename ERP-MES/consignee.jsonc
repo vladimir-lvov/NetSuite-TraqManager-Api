@@ -1,27 +1,30 @@
 {
-  "partyIdentifiers": [
-    { "partyIdentifierType": "Internal", "value": "BUYER123" },
-    { "partyIdentifierType": "GLN",      "value": "5412345000018" }
-  ],
-  "partyType": "Customer",
-  "active": true,
-  "currencyCode": "USD",
-  "nameAddress": {
-    "name1":      "Transcon Publishing Inc.",
+	
+   "consigneeId": "0000",
+   "name": "Norkol Press Room" 
+   "active": true,
+   "shipmentTerms": "DAP",
+   
+  
+	
+  "address": {
     "address1":   "123 Print Lane",
+    "address2":   "Suite 22",
     "city":       "Toronto",
     "region":     "ON",
     "postalCode": "M4B 1B3",
     "country":    "CA"
   },
-  "salesReps": [
-    {
-      "salesRepId":    "21431",
-      "salesRepType":  "Internal",
-      "salesRepName":  "Dale Band",
-      "salesRepEmail": "daleb@albertanewsprint.com"
-    }
+ 
+  "shipAddresses":
+  [
+	"shipAddressId": "45235"
+	"name": "West Gates",
+	{
+		"address": {}
+	}	
   ],
+  
   "contacts": [
     {
       "contactId":    "21431",
@@ -31,6 +34,7 @@
       "active":       true
     }
   ],
+  
   "ediIdentifiers": [
     {
       "name":      "NORKOL-Warehouse",
@@ -44,11 +48,5 @@
   ],
   "attributes": [
     { "attributeType": "approved", "attributeValue": "true" }
-  ],
-  "certifications": [
-    {
-      "certificationType": "PFC",
-      "effectiveDate":     "2025-01-01"
-    }
   ]
 }

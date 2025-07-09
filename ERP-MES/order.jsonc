@@ -3,40 +3,20 @@
   // Order Header
   // ===========================
   "OrderHeader": {
-    "millOrderNumber":     "098765",   // Mill / ERP master order
-    "purchaseOrderNumber": "PO12345",  // Customer’s PO reference
-    "orderStatus":         "New",      // New | Amended | Cancelled | Completed
-    "orderType":           "Standard", // Standard | Cull | Replenish | Internal
-    "version":             1,          // Document version (1 = first issue)
+    "millOrderNumber": "098765",         // Mill / ERP master order
+    "purchaseOrderNumber": "PO12345",    // Customer’s PO reference
+    "referenceNumber": "234525",         // Customer reference
+    "orderStatus": "New",                // New | Amended | Cancelled | Completed
+    "orderType": "Standard",             // Standard | Cull | Replenish | Internal
+    "version": 1,                        // Document version (1 = first issue)
 
     /* ---------- Buyer Party ---------- */
-    "buyerParty": {
-      "partyIdentifiers": [
-        { "partyIdentifierType": "Internal", "value": "BUYER123" },
-        { "partyIdentifierType": "GLN",      "value": "5412345000018" }
-      ],
-      "nameAddress": {
-        "name1":      "Transcon Publishing Inc.",
-        "address1":   "123 Print Lane",
-        "city":       "Toronto",
-        "region":     "ON",
-        "postalCode": "M4B 1B3",
-        "country":    "CA"
-      },
-      "contacts": [
-        {
-          "contactType": "Purchasing",
-          "contactName": "Patricia Nguyen",
-          "email":       "patricia.nguyen@transconpublishing.com"
-        }
-      ],
-      "notes": [
-        { "noteType": "Shipping", "note": "Credit check before shipping" }
-      ]
+    "customer": {
+      "customerId": "26636",
+      "name": "Norkol Inc."
     },
 
-    "isInternal":       false,     // true = internal transfer (no invoice)
-    "orderPurpose":     "Customer",// Customer | Customer Cull | Stock | Stock Cull
+    "orderPurpose": "Customer",          // Customer | Customer Cull | Stock | Stock Cull
     "orderHeaderNotes": [
       { "noteType": "Planner", "note": "Urgent order – please expedite delivery." }
     ]
@@ -47,77 +27,38 @@
   // ===========================
   "lineItems": [
     {
-      "millOrderLineItemNumber":      1,
-      "purchaseOrderLineItemNumber":  1,
-      "lineItemStatusType":          "New",
+      "netSuiteLineupNumber": 1,
+      "purchaseOrderLineItemNumber": 1,
+      "lineItemStatusType": "New",
+      "dateToShip": "2025-07-01",
+      "dateToDeliver": "2025-07-01",
 
+      /* ---------- Shipping Parties ---------- */
+      "shipper": {
+        "shipperId": "6770",
+        "name": "ANC Warehouse"
+      },
+      "consignee": {
+        "consigneeId": "5445",
+        "name": "Norkol"
+      },
+
+      /* ---------- Product Details ---------- */
       "product": {
-        "sku":          "NPA59ST-1275-1150-NPLD-AA-RPP1",
-        "grade":        "NPA59ST",
+        "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
+        "grade": "NPA59ST",
         "rollWidth":    { "value": 1275, "uom": "mm" },
         "rollDiameter": { "value": 1150, "uom": "mm" },
-        "core":         "NPLD",
-        "wrapType":     "AA",
-        "rollPerPack":  1
+        "core": "NPLD",
+        "wrapType": "AA",
+        "rollPerPack": 1
       },
 
       "labelMark": "WALGREENS",
-      "quantity":  { "value": 100, "uom": "MetricTon" },
+      "quantity": { "value": 100, "uom": "MetricTon" },
 
       "orderItemNotes": [
         { "noteType": "Packaging", "note": "Deliver in moisture-resistant packaging." }
-      ],
-
-      /* ---------- mill shipment plan ---------- */
-      "shipmentSchedule": [
-        {
-          "shipmentRequestedDate": "2025-07-01",
-          "quantity":             { "value": 50, "uom": "MetricTon" },
-          "shipmentNotes": [
-            { "noteType": "General", "note": "First half of order" }
-          ]
-        },
-        {
-          "shipmentRequestedDate": "2025-07-15",
-          "quantity":             { "value": 50, "uom": "MetricTon" },
-          "shipmentNotes": [
-            { "noteType": "General", "note": "Second half of order" }
-          ]
-        }
-      ]
-    },
-
-    /* ---------- second line ---------- */
-    {
-      "millOrderLineItemNumber":      2,
-      "purchaseOrderLineItemNumber":  2,
-      "lineItemStatusType":          "New",
-
-      "product": {
-        "sku":          "NPB66HT-1000-0800-NSTA-BB-RPP2",
-        "grade":        "NPB66HT",
-        "rollWidth":    { "value": 1000, "uom": "mm" },
-        "rollDiameter": { "value": 800,  "uom": "mm" },
-        "core":         "NSTA",
-        "wrapType":     "BB",
-        "rollPerPack":  2
-      },
-
-      "labelMark": "LIBERTY TIMES",
-      "quantity":  { "value": 6, "uom": "Roll" },
-
-      "orderItemNotes": [
-        { "noteType": "Handling", "note": "Pack rolls securely to prevent damage." }
-      ],
-
-      "shipmentSchedule": [
-        {
-          "shipmentRequestedDate": "2025-07-15",
-          "quantity":             { "value": 6, "uom": "Roll" },
-          "shipmentNotes": [
-            { "noteType": "General", "note": "Single shipment for this item" }
-          ]
-        }
       ]
     }
   ]
