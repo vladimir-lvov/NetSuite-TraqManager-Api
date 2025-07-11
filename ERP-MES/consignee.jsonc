@@ -14,11 +14,11 @@
 	"country":    "CA"
   },
  
-  "shipAddresses":
+  "consigneeShipAddresses":
   [
 	{
-		"shipAddressId": "45235",
-		"shipAddressName": "West Gates",
+		"consigneeShipAddressId": "45235",
+		"consigneeShipAddressName": "West Gates",
 		"address": {}
 	}	
   ],
