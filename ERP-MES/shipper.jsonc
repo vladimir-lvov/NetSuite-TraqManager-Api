@@ -2,7 +2,6 @@
 	
    "shipperId": "0000",
    "shipperName": "ANC Warehouse",
-   "consigneeId": "4351",
    "active": true,
    "consignee": 
    {
