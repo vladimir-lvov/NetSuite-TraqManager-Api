@@ -16,9 +16,9 @@
  
   "shipAddresses":
   [
-	"shipAddressId": "45235"
-	"shipAddressName": "West Gates",
 	{
+		"shipAddressId": "45235"
+		"shipAddressName": "West Gates",
 		"address": {}
 	}	
   ],
