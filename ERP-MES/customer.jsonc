@@ -2,7 +2,7 @@
   "customerId": "4352",
   "customerType": "Customer",
   //customerParent maps to tm.customer_group
-  "customerParent"{
+  "customerParent": {
     "customerParentId": "8797",
     "customerParentName": "Transcon Publishing Inc." 
   },
