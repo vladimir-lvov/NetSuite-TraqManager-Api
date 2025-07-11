@@ -1,7 +1,7 @@
 {
   "customerId": "4352",
   "customerType": "Customer",
-  "name": "Transcon Edmonton", 
+  "customerName": "Transcon Edmonton", 
   //customerParent maps to tm.customer_group
   "customerParent": {
     "customerParentId": "8797",
