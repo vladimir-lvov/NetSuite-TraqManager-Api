@@ -4,7 +4,7 @@
    "consigneeName": "Norkol Press Room",
    "active": true,
    "shipmentTerms": "DAP",
-   "consigneeType": "DAILY" // DAILY | WEEKLY | COMMERCIAL | CORPORATE | CULL | NOTDEF | WAREHOUSE
+   "consigneeType": "DAILY", // DAILY | WEEKLY | COMMERCIAL | CORPORATE | CULL | NOTDEF | WAREHOUSE
    "address": {
 	"address1":   "123 Print Lane",
 	"address2":   "Suite 22",
