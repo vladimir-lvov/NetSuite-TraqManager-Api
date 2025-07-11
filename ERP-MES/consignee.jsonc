@@ -4,16 +4,14 @@
    "name": "Norkol Press Room" 
    "active": true,
    "shipmentTerms": "DAP",
-   
-  
-	
-  "address": {
-    "address1":   "123 Print Lane",
-    "address2":   "Suite 22",
-    "city":       "Toronto",
-    "region":     "ON",
-    "postalCode": "M4B 1B3",
-    "country":    "CA"
+   "consigneeType": "DAILY" // DAILY | WEEKLY | COMMERCIAL | CORPORATE | CULL | NOTDEF | WAREHOUSE
+   "address": {
+	"address1":   "123 Print Lane",
+	"address2":   "Suite 22",
+	"city":       "Toronto",
+	"region":     "ON",
+	"postalCode": "M4B 1B3",
+	"country":    "CA"
   },
  
   "shipAddresses":
