@@ -1,9 +1,15 @@
 {
-  "customerId": "0000",
+  "customerId": "4352",
   "customerType": "Customer",
-  "customerParentId": "Transcon Publishing Inc.",
+  "customerName": "Transcon Edmonton", 
+  //customerParent maps to tm.customer_group
+  "customerParent": {
+    "customerParentId": "8797",
+    "customerParentName": "Transcon Publishing Inc." 
+  },
   "active": true,
   "currencyCode": "USD",
+  "useParentForCustomsInvoice": false,
 
   "address": {
     "address1": "123 Print Lane",
@@ -46,7 +52,7 @@
 
   "ediIdentifiers": [
     {
-      "name": "NORKOL-Warehouse",
+      "ediIdentifierName": "NORKOL-Warehouse",
       "partnerEdiId": "ZZNORKOL",
       "soldToEdiId": "NORKOL3488",
       "shipToEdiId": "NORKOL"

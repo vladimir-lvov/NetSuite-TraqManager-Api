@@ -1,7 +1,7 @@
 {
 	
    "carrierId": "0000",
-   "name": "Boison" 
+   "carrierName": "Boison",
    "active": true,
    "currency": "Truck",
    "transportationMode": "Truck",   
@@ -16,15 +16,6 @@
     "country":    "CA"
   },
  
-  "shipAddresses":
-  [
-	"shipAddressId": "45235"
-	"name": "West Gates",
-	{
-		"address": {}
-	}	
-  ],
-  
   "contacts": [
     {
       "contactId":    "21431",
