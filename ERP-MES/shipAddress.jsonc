@@ -1,7 +1,7 @@
 {
 	
-   "consigneeShipAddressId": "0000",
-   "consigneeShipAddressName": "Norkol Press Room",
+   "shipAddressId": "0000",
+   "shipAddressName": "Norkol Press Room",
    "active": true,
    "address": {
 	"address1":   "123 Print Lane",
