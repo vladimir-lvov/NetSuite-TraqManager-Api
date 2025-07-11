@@ -1,7 +1,11 @@
 {
-  "customerId": "0000",
+  "customerId": "4352",
   "customerType": "Customer",
-  "customerParentId": "Transcon Publishing Inc.",
+  //customerParent maps to tm.customer_group
+  "customerParent"{
+    "customerParentId": "8797"
+    "customerParentName": "Transcon Publishing Inc." 
+  },
   "active": true,
   "currencyCode": "USD",
   "useParentForCustomsInvoice": false,
