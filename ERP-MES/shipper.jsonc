@@ -1,7 +1,7 @@
 {
 	
    "shipperId": "0000",
+   "shipperName": "ANC Warehouse",
    "consigneeId": "4351",
-   "name": "ANC Warehouse",
    "active": true,
 }
