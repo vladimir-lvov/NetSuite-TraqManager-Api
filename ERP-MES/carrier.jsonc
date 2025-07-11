@@ -1,7 +1,7 @@
 {
 	
    "carrierId": "0000",
-   "carrierName": "Boison" 
+   "carrierName": "Boison",
    "active": true,
    "currency": "Truck",
    "transportationMode": "Truck",   
