@@ -4,4 +4,9 @@
    "shipperName": "ANC Warehouse",
    "consigneeId": "4351",
    "active": true,
+   "consignee": 
+   {
+      "consigneeId": "2143",
+      "consigneeName": "Active warehouse"
+    }	
 }
