@@ -4,6 +4,7 @@
   "customerParentId": "Transcon Publishing Inc.",
   "active": true,
   "currencyCode": "USD",
+  "useParentForCustomsInvoice": false,
 
   "address": {
     "address1": "123 Print Lane",
