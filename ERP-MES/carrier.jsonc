@@ -28,7 +28,7 @@
   
   "ediIdentifiers": [
     {
-      "name":      "NORKOL-Warehouse",
+      "ediIdentifierName":      "NORKOL-Warehouse",
       "partnerEdiId": "ZZNORKOL",
       "soldToEdiId":  "NORKOL3488",
       "shipToEdiId":  "NORKOL"
