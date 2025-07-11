@@ -1,0 +1,18 @@
+{
+	
+   "consigneeShipAddressId": "0000",
+   "consigneeShipAddressName": "Norkol Press Room",
+   "active": true,
+   "address": {
+	"address1":   "123 Print Lane",
+	"address2":   "Suite 22",
+	"city":       "Toronto",
+	"region":     "ON",
+	"postalCode": "M4B 1B3",
+	"country":    "CA"
+  },
+ 
+  "notes": [
+    { "noteType": "Shipping", "note": "Credit check before shipping" }
+  ]
+}
