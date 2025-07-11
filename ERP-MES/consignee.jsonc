@@ -1,7 +1,7 @@
 {
 	
    "consigneeId": "0000",
-   "consigneeName": "Norkol Press Room" 
+   "consigneeName": "Norkol Press Room",
    "active": true,
    "shipmentTerms": "DAP",
    "consigneeType": "DAILY" // DAILY | WEEKLY | COMMERCIAL | CORPORATE | CULL | NOTDEF | WAREHOUSE
@@ -17,7 +17,7 @@
   "shipAddresses":
   [
 	{
-		"shipAddressId": "45235"
+		"shipAddressId": "45235",
 		"shipAddressName": "West Gates",
 		"address": {}
 	}	
