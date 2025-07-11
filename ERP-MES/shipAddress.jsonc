@@ -3,7 +3,12 @@
    "shipAddressId": "0000",
    "shipAddressName": "Norkol Press Room",
    "active": true,
-   "address": {
+   "consignee": 
+   {
+      "consigneeId": "2143",
+      "consigneeName": "Active warehouse"
+    },
+    "address": {
 	"address1":   "123 Print Lane",
 	"address2":   "Suite 22",
 	"city":       "Toronto",
