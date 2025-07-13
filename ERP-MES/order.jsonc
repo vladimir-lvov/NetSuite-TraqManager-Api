@@ -59,6 +59,9 @@
 
       "labelMark": "WALGREENS",
       "quantity": { "value": 100, "uom": "MetricTon" },
+      "rolls": 10,
+      "weight": 200,
+
 
       "orderItemNotes": [
         { "noteType": "Packaging", "note": "Deliver in moisture-resistant packaging." }
