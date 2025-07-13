@@ -53,14 +53,15 @@
         "rollWidth":    { "value": 1275, "uom": "mm" },
         "rollDiameter": { "value": 1150, "uom": "mm" },
         "core": "NPLD",
-        "wrapType": "AA",
         "rollPerPack": 1
       },
 
+      "wrapType": "AA",
       "labelMark": "WALGREENS",
+
       "quantity": { "value": 100, "uom": "MetricTon" },
-      "rolls": 10,
-      "weight": 200,
+      "rolls": 100,
+      "weight": 100200,                      // Weight or rolls in kg
 
 
       "orderItemNotes": [
