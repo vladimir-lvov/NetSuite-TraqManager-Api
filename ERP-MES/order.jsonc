@@ -6,9 +6,11 @@
     "millOrderNumber": "098765",         // Mill / ERP master order
     "purchaseOrderNumber": "PO12345",    // Customer’s PO reference
     "referenceNumber": "234525",         // Customer reference
+    "allocationMonth": "2025-07-01"      // First day of the allocation month
     "orderStatus": "New",                // New | Amended | Cancelled | Completed
     "orderType": "Standard",             // Standard | Cull | Replenish | Internal
     "version": 1,                        // Document version (1 = first issue)
+
 
     /* ---------- Buyer Party ---------- */
     "customer": {
@@ -35,9 +37,10 @@
 
       /* ---------- Shipping Parties ---------- */
       "shipper": {
-        "shipperId": "6770",
-        "shipperName": "ANC Warehouse"
+        "shipperId": "6770",                // Shipper no (not consignee no)
+        "shipperName": "ANC Warehouse"      // The name of the consignee linked to the shipper 
       },
+
       "consignee": {
         "consigneeId": "5445",
         "consigneeName": "Norkol"
