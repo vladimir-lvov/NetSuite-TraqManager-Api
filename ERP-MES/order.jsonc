@@ -13,7 +13,7 @@
     /* ---------- Buyer Party ---------- */
     "customer": {
       "customerId": "26636",
-      "name": "Norkol Inc."
+      "customerName": "Norkol Inc."
     },
 
     "orderPurpose": "Customer",          // Customer | Customer Cull | Stock | Stock Cull
@@ -36,11 +36,11 @@
       /* ---------- Shipping Parties ---------- */
       "shipper": {
         "shipperId": "6770",
-        "name": "ANC Warehouse"
+        "shipperName": "ANC Warehouse"
       },
       "consignee": {
         "consigneeId": "5445",
-        "name": "Norkol"
+        "consigneeName": "Norkol"
       },
 
       /* ---------- Product Details ---------- */
