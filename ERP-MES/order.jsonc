@@ -2,7 +2,7 @@
   // ===========================
   // Order Header
   // ===========================
-  "OrderHeader": {
+  "orderHeader": {
     "millOrderNumber": "098765",         // Mill / ERP master order
     "purchaseOrderNumber": "PO12345",    // Customer’s PO reference
     "referenceNumber": "234525",         // Customer reference
