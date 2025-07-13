@@ -46,11 +46,13 @@
     "name": "Bison"
   },
 
+
   // ===========================
   // Stops – Date/time windows
   // ===========================
   "dateToShip": "2025-07-01",
   "dateToDeliver": "2025-07-01",
+  "firmDateToShip" : true,
 
   // ===========================
   // Transport requirements
@@ -83,6 +85,8 @@
       "shipInFull": false                          // Filler
     }
   ],
+
+  "loadMethod": "END",                // END | BILGE
 
   // ===========================
   // Load-level notes
