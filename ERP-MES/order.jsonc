@@ -27,7 +27,7 @@
   // ===========================
   "lineItems": [
     {
-      "netSuiteLineupNumber": 1,
+      "lineupNumber": 1,
       "purchaseOrderLineItemNumber": 1,
       "lineItemStatusType": "New",
       "dateToShip": "2025-07-01",
