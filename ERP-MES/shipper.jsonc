@@ -1,6 +1,6 @@
 {
   "shipperId": "0000",
-  "shipperName": "ANC Warehouse",        // Aligns with other “*Name” fields
+  "shipperName": "Active warehouse",        // Normally Consignee Name
   "active": true,
 
   "consignee": {

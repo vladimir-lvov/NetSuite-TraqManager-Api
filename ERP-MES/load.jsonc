@@ -31,7 +31,7 @@
   },
 
   /* ---------- Carrier ---------- */
-  "carrier": { "carrierId": "5545", "name": "Bison" },
+  "carrier": { "carrierId": "5545", "carrierName": "Bison" },
 
   // ===========================
   // Stops – Date/time windows
