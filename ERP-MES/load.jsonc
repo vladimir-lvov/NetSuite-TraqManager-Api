@@ -2,9 +2,9 @@
   // ===========================
   // Load Header
   // ===========================
-  "loadNumber": "FN0626H5",          // Unique load ID
-  "loadStatus": "New",               // New | Amended | Cancelled
-  "version": 1,                      // Document version
+  "loadNumber": "FN0626H5",               // Unique load ID
+  "loadStatus": "New",                    // New | Amended | Cancelled
+  "version": 1,                           // Document version
 
   // Option: Joint Load
   "jointLoad": {
@@ -14,52 +14,37 @@
 
   // Optional links back to order(s)
   "references": [
-    { "referenceType": "customerLoadNumber", "referenceValue": "45525" },
-    { "referenceType": "millOrderNumber",    "referenceValue": "098765" },
-    { "referenceType": "purchaseOrderNumber","referenceValue": "PO12345" }
+    { "referenceType": "customerLoadNumber",  "referenceValue": "45525" },
+    { "referenceType": "millOrderNumber",     "referenceValue": "098765" },
+    { "referenceType": "purchaseOrderNumber", "referenceValue": "PO12345" }
   ],
 
   /* ---------- Parties ---------- */
-  "customer": {                      // Sold-to / billing party
-    "customerId": "26636",           // ERP customer code
-    "name": "Norkol Inc."
-  },
+  "customer":  { "customerId": "26636", "name": "Norkol Inc." },   // Sold-to / billing
+  "shipper":   { "shipperId": "6770",  "name": "ANC Warehouse" },  // Origin
+  "consignee": { "consigneeId": "5445", "name": "Norkol" },        // Final delivery
 
-  "shipper": {                       // Origin facility
-    "shipperId": "6770",
-    "name": "ANC Warehouse"
-  },
-
-  "consignee": {                     // Final delivery location
-    "consigneeId": "5445",
-    "name": "Norkol"
-  },
-
-  "shipAddress": {                   // Optional alternate ship-to (use when different from consignee)
+  "shipAddress": {                      // Optional alternate ship-to
     "shipAddressId": "45235",
     "name": "West Gates"
   },
 
-  /* ---------- Carrier (Transport provider) ---------- */
-  "carrier": {
-    "carrierId": "5545",
-    "name": "Bison"
-  },
-
+  /* ---------- Carrier ---------- */
+  "carrier": { "carrierId": "5545", "name": "Bison" },
 
   // ===========================
   // Stops – Date/time windows
   // ===========================
   "dateToShip": "2025-07-01",
   "dateToDeliver": "2025-07-01",
-  "firmDateToShip" : true,
+  "firmDateToShip": true,
 
   // ===========================
   // Transport requirements
   // ===========================
   "transportInformation": {
-    "transportMode": "Truck",        // Truck | Rail | Intermodal
-    "equipmentType": "TRTAMDV53"     // Vehicle/body code
+    "transportMode": "Truck",            // Truck | Rail | Intermodal
+    "equipmentType": "TRTAMDV53"         // Vehicle/body code
   },
 
   // ===========================
@@ -69,24 +54,24 @@
     {
       "millOrderNumber": "098765",
       "millOrderLineItemNumber": 1,
-      "quantity": { "value": 10, "uom": "Roll" },  // First half of order
+      "quantity": { "value": 10, "uom": "Roll" },   // First half of order
       "shipInFull": true
     },
     {
       "millOrderNumber": "098765",
       "millOrderLineItemNumber": 2,
-      "quantity": { "value": 20, "uom": "Roll" },  // Second half of order
+      "quantity": { "value": 20, "uom": "Roll" },   // Second half of order
       "shipInFull": true
     },
     {
       "millOrderNumber": "098766",
       "millOrderLineItemNumber": 1,
       "quantity": { "value": 6, "uom": "Roll" },
-      "shipInFull": false                          // Filler
+      "shipInFull": false                           // Filler
     }
   ],
 
-  "loadMethod": "END",                // END | BILGE
+  "loadMethod": "END",                   // END | BILGE
 
   // ===========================
   // Load-level notes
