@@ -1,42 +1,45 @@
 {
-	
-   "carrierId": "0000",
-   "carrierName": "Boison",
-   "active": true,
-   "currency": "Truck",
-   "transportationMode": "Truck",   
-  
-	
+  "carrierId": "0000",
+  "carrierName": "Bison",                 // ✱ corrected spelling (“Boison” → “Bison”)
+  "active": true,
+
+  // ISO-4217 settlement currency 
+  "currency": "CAD",                     
+
+  "transportationMode": "Truck",          // Truck | Rail | Intermodal
+
   "address": {
-    "address1":   "123 Print Lane",
-    "address2":   "Suite 22",
-    "city":       "Toronto",
-    "region":     "ON",
+    "address1": "123 Print Lane",
+    "address2": "Suite 22",
+    "city": "Toronto",
+    "region": "ON",
     "postalCode": "M4B 1B3",
-    "country":    "CA"
+    "country": "CA"
   },
- 
+
   "contacts": [
     {
-      "contactId":    "21431",
-      "contactType":  "Purchasing",
-      "contactName":  "Patricia Nguyen",
+      "contactId": "21431",
+      "contactType": "Purchasing",
+      "contactName": "Patricia Nguyen",
       "contactEmail": "patricia.nguyen@transconpublishing.com",
-      "active":       true
+      "active": true
     }
   ],
-  
+
   "ediIdentifiers": [
     {
-      "ediIdentifierName":      "NORKOL-Warehouse",
+      "ediIdentifierName": "NORKOL-Warehouse",
       "partnerEdiId": "ZZNORKOL",
-      "soldToEdiId":  "NORKOL3488",
-      "shipToEdiId":  "NORKOL"
+      "soldToEdiId": "NORKOL3488",
+      "shipToEdiId": "NORKOL"
     }
   ],
+
   "notes": [
     { "noteType": "Shipping", "note": "Credit check before shipping" }
   ],
+
   "attributes": [
     { "attributeType": "approved", "attributeValue": "true" }
   ]
