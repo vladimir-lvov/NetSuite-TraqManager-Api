@@ -1,20 +1,15 @@
-{
-	
-   "shipAddressId": "0000",
-   "shipAddressName": "Norkol Press Room",
-   "active": true,
-   "consignee": 
-   {
-      "consigneeId": "2143",
-      "consigneeName": "Active warehouse"
-    },
-    "address": {
-	"address1":   "123 Print Lane",
-	"address2":   "Suite 22",
-	"city":       "Toronto",
-	"region":     "ON",
-	"postalCode": "M4B 1B3",
-	"country":    "CA"
+{	
+  "shipAddressId": "0000",
+  "shipAddressName": "Norkol Press Room",
+  "active": true,
+
+  "consignee": {                        // Parent consignee reference
+    "consigneeId": "2143",
+    "consigneeName": "Active warehouse"
+  },
+
+  "address": {
+     /* standard address group*/
   },
  
   "notes": [
