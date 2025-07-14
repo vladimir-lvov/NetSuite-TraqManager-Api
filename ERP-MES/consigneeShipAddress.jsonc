@@ -1,6 +1,6 @@
 {	
-  "shipAddressId": "0000",
-  "shipAddressName": "Norkol Press Room",
+  "consigneeShipAddressId": "0000",
+  "consigneeShipAddressName": "Norkol Press Room",
   "active": true,
 
   "consignee": {                        // Parent consignee reference
