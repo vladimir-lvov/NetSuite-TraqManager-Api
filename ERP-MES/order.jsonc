@@ -11,7 +11,6 @@
     "orderType": "Standard",             // Standard | Cull | Replenish | Internal
     "version": 1,                        // Document version (1 = first issue)
 
-
     /* ---------- Buyer Party ---------- */
     "customer": {
       "customerId": "26636",
@@ -25,7 +24,7 @@
   },
 
   // ===========================
-  // Order Line Items with dates (Lineups)
+  // Order Line Items (with dates)
   // ===========================
   "lineItems": [
     {
@@ -37,10 +36,9 @@
 
       /* ---------- Shipping Parties ---------- */
       "shipper": {
-        "shipperId": "6770",                // Shipper no (not consignee no)
-        "shipperName": "ANC Warehouse"      // The name of the consignee linked to the shipper 
+        "shipperId": "6770",              // Shipper no (not consignee no)
+        "shipperName": "ANC Warehouse"
       },
-
       "consignee": {
         "consigneeId": "5445",
         "consigneeName": "Norkol"
@@ -61,8 +59,7 @@
 
       "quantity": { "value": 100, "uom": "MetricTon" },
       "rolls": 100,
-      "weight": 100200,                      // Weight or rolls in kg
-
+      "weight": 100200,                  // Weight or rolls in kg
 
       "orderItemNotes": [
         { "noteType": "Packaging", "note": "Deliver in moisture-resistant packaging." }
