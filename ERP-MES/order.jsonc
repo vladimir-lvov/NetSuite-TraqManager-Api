@@ -8,7 +8,7 @@
     "referenceNumber": "234525",         // Customer reference
     "allocationMonth": "2025-07-01",     // First day of the allocation month
     "orderStatus": "New",                // New | Amended | Cancelled | Completed
-    "orderType": "Standard",             // Standard | Cull | Replenish | Internal
+    "orderType": "Standard",             // Standard | Cull | Replenishment | Internal
     "version": 1,                        // Document version (1 = first issue)
 
     /* ---------- Buyer Party ---------- */
