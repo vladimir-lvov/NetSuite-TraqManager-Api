@@ -20,13 +20,14 @@
   ],
 
   /* ---------- Parties ---------- */
-  "customer":  { "customerId": "26636", "name": "Norkol Inc." },   // Sold-to / billing
-  "shipper":   { "shipperId": "6770",  "name": "ANC Warehouse" },  // Origin
-  "consignee": { "consigneeId": "5445", "name": "Norkol" },        // Final delivery
+  "customer":  { "customerId": "26636", "customerName": "Norkol Inc." },   // Sold-to / billing
+  "shipper":   { "shipperId": "6770",  "shipperName": "ANC Warehouse" },  // Origin
+  "consignee": { "consigneeId": "5445", "consigneeName": "Norkol" },        // Final delivery
 
-  "shipAddress": {                      // Optional alternate ship-to
-    "shipAddressId": "45235",
-    "name": "West Gates"
+  // Optional alternate ship-to
+  "consigneeShipAddress": {                      
+    "consigneeShipAddressId": "45235",
+    "consigneeShipAddressName": "West Gates"
   },
 
   /* ---------- Carrier ---------- */
