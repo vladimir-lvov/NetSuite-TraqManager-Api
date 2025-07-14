@@ -1,14 +1,16 @@
 {
   "customerId": "4352",
   "customerType": "Customer",
-  "customerName": "Transcon Edmonton", 
-  //customerParent maps to tm.customer_group
+  "customerName": "Transcon Edmonton",
+
+  // customerParent maps to tm.customer_group
   "customerParent": {
     "customerParentId": "8797",
-    "customerParentName": "Transcon Publishing Inc." 
+    "customerParentName": "Transcon Publishing Inc."
   },
+
   "active": true,
-  "currencyCode": "USD",
+  "currencyCode": "USD",                  // ISO-4217
   "useParentForCustomsInvoice": false,
 
   "address": {
@@ -21,15 +23,10 @@
   },
 
   "consignees": [
-    {
-      "consigneeId": "2143",
-      "consigneeName": "Active warehouse"
-    },
-    {
-      "consigneeId": "3455",
-      "consigneeName":  "Transcon Press"
-    }	
+    { "consigneeId": "2143", "consigneeName": "Active warehouse" },
+    { "consigneeId": "3455", "consigneeName": "Transcon Press" }
   ],
+
 
   "salesReps": [
     {
@@ -74,9 +71,6 @@
   ],
 
   "certifications": [
-    {
-      "certificationType": "PFC",
-      "effectiveDate": "2025-01-01"
-    }
+    { "certificationType": "PFC", "effectiveDate": "2025-01-01" }
   ]
 }
