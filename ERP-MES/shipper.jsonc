@@ -1,6 +1,4 @@
 {
-	
-{
   "shipperId": "0000",
   "shipperName": "ANC Warehouse",        // Aligns with other “*Name” fields
   "active": true,
