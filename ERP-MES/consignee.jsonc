@@ -1,28 +1,31 @@
 {
-	
-   "consigneeId": "0000",
-   "consigneeName": "Norkol Press Room",
-   "active": true,
-   "shipmentTerms": "DAP",
-   "consigneeType": "DAILY", // DAILY | WEEKLY | COMMERCIAL | CORPORATE | CULL | NOTDEF | WAREHOUSE
-   "address": {
-	"address1":   "123 Print Lane",
-	"address2":   "Suite 22",
-	"city":       "Toronto",
-	"region":     "ON",
-	"postalCode": "M4B 1B3",
-	"country":    "CA"
+  "consigneeId": "0000",
+  "consigneeName": "Norkol Press Room",
+  "active": true,
+
+  "shipmentTerms": "DAP",
+
+  // Optional consignee type
+  "consigneeType": "DAILY",               // DAILY | WEEKLY | COMMERCIAL | CORPORATE | CULL | NOTDEF | WAREHOUSE
+
+  "address": {
+    "address1": "123 Print Lane",
+    "address2": "Suite 22",
+    "city": "Toronto",
+    "region": "ON",
+    "postalCode": "M4B 1B3",
+    "country": "CA"
   },
- 
-  "consigneeShipAddresses":
-  [
-	{
-		"consigneeShipAddressId": "45235",
-		"consigneeShipAddressName": "West Gates",
-		"address": {}
-	}	
+
+  // Child ship-to gates / docks
+  "consigneeShipAddresses": [
+    {
+      "consigneeShipAddressId": "45235",
+      "consigneeShipAddressName": "West Gates"
+    }
   ],
-  
+
+
   "contacts": [
     {
       "contactId":    "21431",
