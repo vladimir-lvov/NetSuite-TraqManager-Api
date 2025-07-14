@@ -1,10 +1,14 @@
 {
 	
-   "shipperId": "0000",
-   "active": true,
-   "consignee": 
-   {
-      "consigneeId": "2143",
-      "consigneeName": "Active warehouse"
-    }	
+{
+  "shipperId": "0000",
+  "shipperName": "ANC Warehouse",        // Aligns with other “*Name” fields
+  "active": true,
+
+  "consignee": {
+    "consigneeId": "2143",
+    "consigneeName": "Active warehouse"
+  }
 }
+
+
