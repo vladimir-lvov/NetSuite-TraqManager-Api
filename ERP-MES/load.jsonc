@@ -45,7 +45,7 @@
   // ===========================
   "transportInformation": {
     "transportMode": "Truck",            // Truck | Rail | Intermodal
-    "equipmentType": "TRTAMDV53"         // Vehicle/body code
+    "equipmentType": "TRTAMDV53"         // vehicle_code
   },
 
   // ===========================
@@ -54,21 +54,15 @@
   "loadLineItems": [
     {
       "millOrderNumber": "098765",
-      "millOrderLineItemNumber": 1,
-      "quantity": { "value": 10, "uom": "Roll" },   // First half of order
+      "millOrderLineupNumber": 1,
+      "quantity": { "value": 10, "uom": "Roll" },   
       "shipInFull": true
     },
     {
       "millOrderNumber": "098765",
-      "millOrderLineItemNumber": 2,
-      "quantity": { "value": 20, "uom": "Roll" },   // Second half of order
+      "millOrderLineupNumber": 2,
+      "quantity": { "value": 20, "uom": "Roll" },   
       "shipInFull": true
-    },
-    {
-      "millOrderNumber": "098766",
-      "millOrderLineItemNumber": 1,
-      "quantity": { "value": 6, "uom": "Roll" },
-      "shipInFull": false                           // Filler
     }
   ],
 
