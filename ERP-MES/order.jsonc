@@ -28,7 +28,7 @@
   // ===========================
   "lineItems": [
     {
-      "lineupNumber": 1,
+      "millOrderLineupNumber": 1,
       "purchaseOrderLineItemNumber": 1,
       "lineItemStatusType": "New",
       "dateToShip": "2025-07-01",
