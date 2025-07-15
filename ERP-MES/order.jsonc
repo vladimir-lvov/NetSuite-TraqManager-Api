@@ -48,8 +48,8 @@
       "product": {
         "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
         "grade": "NPA59ST",
-        "rollWidth":    { "value": 1275, "uom": "mm" },
-        "rollDiameter": { "value": 1150, "uom": "mm" },
+        "rollWidth":    { "value": 127.5, "uom": "cm" },
+        "rollDiameter": { "value": 115.0, "uom": "cm" },
         "core": "NPLD",
         "rollPerPack": 1
       },
