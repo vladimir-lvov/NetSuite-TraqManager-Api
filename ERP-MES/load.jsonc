@@ -6,18 +6,22 @@
   "loadStatus": "New",                    // New | Amended | Cancelled
   "version": 1,                           // Document version
 
-  // Option: Joint Load
+  // Required
+  "loadMethod": "END",                   // END | BILGE
+
+  // Optional: Joint Load
   "jointLoad": {
     "jointLoadNumber": "J00033",
     "stopOrder": 1
   },
 
-  // Optional links back to order(s)
-  "references": [
-    { "referenceType": "customerLoadNumber",  "referenceValue": "45525" },
-    { "referenceType": "millOrderNumber",     "referenceValue": "098765" },
-    { "referenceType": "purchaseOrderNumber", "referenceValue": "PO12345" }
-  ],
+  // ===========================
+  //  Date/time
+  // ===========================
+  "dateToShip": "2025-07-01",
+  "dateToDeliver": "2025-07-01",
+  "firmDateToShip": true,
+
 
   /* ---------- Parties ---------- */
   "customer":  { "customerId": "26636", "customerName": "Norkol Inc." },   // Sold-to / billing
@@ -30,15 +34,8 @@
     "consigneeShipAddressName": "West Gates"
   },
 
-  /* ---------- Carrier ---------- */
+  /* ---------- Optional Carrier ---------- */
   "carrier": { "carrierId": "5545", "carrierName": "Bison" },
-
-  // ===========================
-  // Stops – Date/time windows
-  // ===========================
-  "dateToShip": "2025-07-01",
-  "dateToDeliver": "2025-07-01",
-  "firmDateToShip": true,
 
   // ===========================
   // Transport requirements
@@ -48,8 +45,15 @@
     "equipmentType": "TRTAMDV53"         // vehicle_code
   },
 
+  // Optional links back to order(s)
+  "references": [
+    { "referenceType": "customerLoadNumber",  "referenceValue": "45525" },
+    { "referenceType": "millOrderNumber",     "referenceValue": "098765" },
+    { "referenceType": "purchaseOrderNumber", "referenceValue": "PO12345" }
+  ],
+
   // ===========================
-  // Line items being shipped
+  // Line items being shipped (at least one should present)
   // ===========================
   "loadLineItems": [
     {
@@ -58,9 +62,7 @@
       "quantity": { "value": 10, "uom": "Roll" },   
       "shipInFull": true
     }
-  ],
-
-  "loadMethod": "END",                   // END | BILGE
+  ], 
 
   // ===========================
   // Load-level notes
