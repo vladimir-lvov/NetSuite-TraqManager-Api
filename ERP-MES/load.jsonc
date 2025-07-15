@@ -57,12 +57,6 @@
       "millOrderLineupNumber": 1,
       "quantity": { "value": 10, "uom": "Roll" },   
       "shipInFull": true
-    },
-    {
-      "millOrderNumber": "098765",
-      "millOrderLineupNumber": 2,
-      "quantity": { "value": 20, "uom": "Roll" },   
-      "shipInFull": true
     }
   ],
 
