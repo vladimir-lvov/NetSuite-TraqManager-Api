@@ -17,7 +17,6 @@
       "customerName": "Norkol Inc."
     },
 
-    "orderPurpose": "Customer",          // Customer | Customer Cull | Stock | Stock Cull
     "orderHeaderNotes": [
       { "noteType": "Planner", "note": "Urgent order – please expedite delivery." }
     ]
