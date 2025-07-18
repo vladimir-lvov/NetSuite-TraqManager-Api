@@ -47,13 +47,13 @@
       "product": {
         "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
         "grade": "NPA59ST",
-        "rollWidth":    { "value": 127.5, "uom": "cm" },
-        "rollDiameter": { "value": 115.0, "uom": "cm" },
+        "width":    { "value": 127.5, "uom": "cm" },
+        "diameter": { "value": 115.0, "uom": "cm" },
         "core": "NPLD",
         "rollPerPack": 1
       },
 
-      "wrapType": "AA",
+      "wrap": "AA",
       "labelMark": "WALGREENS",
 
       "quantity": { "value": 100, "uom": "MetricTon" },
