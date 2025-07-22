@@ -52,11 +52,14 @@
       "rollsPerPack":  1,
     },
 
-    "wrap":          "Single Wrap",
-    "labelMark":     null
+    "wrapType":        "Single Wrap",
+    "labelMark":       null,
  
     /* ---------- Measured Dimensions ---------- */
-    "actualDimensions": { "width": 63.8, "diameter": 106.8 },   // cm
+    "actualDimensions": { 
+	   "width":        63.8, 
+	   "diameter":     106.8 
+	},   // cm
     
 
     /* ---------- Basis weight ---------- */
