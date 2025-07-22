@@ -1,0 +1,105 @@
+[
+  {
+    "rollId": "AB1G12035I",
+    "setId":  "AB1G12035",
+    "reedId": "AB1G1203",
+
+    /* ---------- Bundled rolls ---------- */
+    "bundledRolls": [
+      { "rollId": "AB1G12035J" }
+    ],
+
+    /* ---------- Dates ---------- */
+    "dates": {
+      "produced":  "2025-07-12T09:34:08Z",
+      "wrapped":   "2025-07-12T19:19:52.980Z",
+      "modified":  "2025-07-16T13:36:17.490Z"
+    },
+
+    /* ---------- Order linkage ---------- */
+    "orderLink": {
+      "millOrderNumber":     "097807",
+      "millOrderLineNumber": 1,
+      "orderType":           "STANDARD"
+    },
+
+    /* ---------- Parties ---------- */
+    "customer": {
+      "customerId":   "26636",
+      "customerName": "Norkol Inc."
+    },
+ 
+    /* ---------- Location ---------- */
+    "shipper": {
+      "shipperId":   "3",
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "zone":          "T1A",
+	
+    /* ---------- Process ---------- */
+    "processStatus": "LOADED",
+    "lastRollEvent": "ROLL LOADED TO VEHICLE (TRUCK, TRAIN, BOAT)",
+    "qualityStatus": "SALE",
+	"downgradeReason": null,
+
+    "isStenciled":   true,
+    "rewrapCount":   0,
+     "wrap":          "Single Wrap",
+      "labelMark":     null
+ 
+    /* ---------- Product details ---------- */
+    "product": {
+      "sku":           "NPL59ST-PLND D106.7 W63.5",
+      "grade":         "NPL59ST",
+      "core":          "PLND",
+	  "width":         63.5, 
+	  "diameter":      106.7,
+      "rollsPerPack":  1,
+    },
+
+    /* ---------- Measured Dimensions ---------- */
+    "actualDimensions": { "width": 63.8, "diameter": 106.8 },   // cm
+    
+
+    /* ---------- Basis weight ---------- */
+    "basisWeight": {
+      "ordered": 43.0,        // gsm
+      "actual":  43.38655     // gsm
+    },
+
+    /* ---------- Physical properties ---------- */
+    "length":  12574,   // m
+    "density": 612.0,   // kg/m³
+
+    /* ---------- Weights in kg ---------- */
+    "weights": {
+      "estimated": 343,
+      "gross":     350,
+      "net":       345
+    },
+
+    /* ---------- Audit trail ---------- */
+    "inventoryAudits": [
+      {
+        "auditDate":        "2025-07-16T13:36:17.483Z",
+        "auditCode":        403,
+        "auditDescription": "ROLL TRANSFERRED TO ANOTHER LOCATION",
+        "oldValue":         "T5B",
+        "newValue":         "T1A",
+        "oldQualityStatus": "SALE",
+        "newQualityStatus": "SALE",
+        "productionCenter": "Clamp Truck 42"
+      },
+      {
+        "auditDate":        "2025-07-16T13:36:17.490Z",
+        "auditCode":        550,
+        "auditDescription": "ROLL LOADED TO VEHICLE (TRUCK, TRAIN, BOAT )",
+        "oldValue":         "T5B",
+        "newValue":         "F0722SE1",
+        "oldQualityStatus": "SALE",
+        "newQualityStatus": "SALE",
+        "productionCenter": "Clamp Truck 42"
+      }
+    ]
+  }
+]
