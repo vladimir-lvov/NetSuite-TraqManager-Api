@@ -7,9 +7,10 @@
     "purchaseOrderNumber": "PO12345",    // Customer’s PO reference
     "referenceNumber": "234525",         // Customer reference
     "allocationMonth": "2025-07-01",     // First day of the allocation month
-    "orderStatus": "New",                // New | Amended | Cancelled | Completed
+    "lastDateChange": "2025-06-14",      // Optional LDC
+    "orderStatus": "Released",           // Pending | Approved | Released | Closed | Cancelled
     "orderType": "Standard",             // Standard | Cull | Replenishment | Internal
-    "version": 1,                        // Document version (1 = first issue)
+    "revisionNo": 1,                     // Document version (1 = first issue)
 
     /* ---------- Buyer Party ---------- */
     "customer": {
@@ -27,38 +28,48 @@
   // ===========================
   "lineItems": [
     {
-      "millOrderLineupNumber": 1,
+      "millOrderLineNumber": 1,
       "purchaseOrderLineItemNumber": 1,
-      "lineItemStatusType": "New",
-      "dateToShip": "2025-07-01",
-      "dateToDeliver": "2025-07-01",
-
+      "lineItemStatusType": "Active", 		// Active | Closed | Cancelled
+      "lastDateChange": "2025-06-14",       // Optional LDC
+	  "dateToShip": "2025-07-01",           // 
+	  "orderItemType": "STANDARD",			// Standard | Trial
+	  "firmDateToShip": true,
+ 
       /* ---------- Shipping Parties ---------- */
       "shipper": {
-        "shipperId": "6770",              // Shipper no (not consignee no)
+        "shipperId": "6770",                // Shipper no (not consignee no)
         "shipperName": "ANC Warehouse"
       },
       "consignee": {
         "consigneeId": "5445",
         "consigneeName": "Norkol"
       },
+	  
 
       /* ---------- Product Details ---------- */
       "product": {
         "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
         "grade": "NPA59ST",
-        "width":    { "value": 127.5, "uom": "cm" },
-        "diameter": { "value": 115.0, "uom": "cm" },
+        "width":    127.0,        // cm
+        "diameter": 127.0,        // cm
+        "widthImperial":    50.0, // inch
+        "diameterImperial": 50.0, // inch
         "core": "NPLD",
-        "rollPerPack": 1
+        "rollPerPack": 1          // 1 | 2
       },
 
-      "wrap": "AA",
+      "wrapType": "AA",
       "labelMark": "WALGREENS",
+	  "rollPosition": "ANY",   //ANY | NO_END | END
 
-      "quantity": { "value": 100, "uom": "MetricTon" },
-      "rolls": 100,
-      "weight": 100200,                  // Weight or rolls in kg
+      /*Quantity (unist) to ship or produce for relenishment order */
+      "quantity": { 
+		"value": 122.3, 
+		"uom": "MetricTon" 
+	  },
+      "rolls": 100, // Number of whole rolls to ship
+	  "price": 988, // Price per Metric Ton in customer currency for Customs Invoice 
 
       "orderItemNotes": [
         { "noteType": "Packaging", "note": "Deliver in moisture-resistant packaging." }

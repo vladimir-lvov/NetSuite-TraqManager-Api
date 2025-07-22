@@ -1,0 +1,11 @@
+{
+	"sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
+	"grade": "NPA59ST",
+	"width":    127.0, // cm
+	"diameter": 127.0, // cm
+	"widthImperial":    50.0, // inch
+	"diameterImperial": 50.0, // inch
+	"core": "NPLD",
+	"rollPerPack": 1,
+	"active": true
+}
