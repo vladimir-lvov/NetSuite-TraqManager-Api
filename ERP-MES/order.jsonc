@@ -8,7 +8,7 @@
     "referenceNumber": "234525",         // Customer reference
     "allocationMonth": "2025-07-01",     // First day of the allocation month
     "lastDateChange": "2025-06-14",      // Optional LDC
-    "orderStatus": "Released",           // Pending | Approved | Released | Closed | Cancelled
+    "orderStatus": "Released",           // Pending |  | Released | Closed | Cancelled
     "orderType": "Standard",             // Standard | Cull | Replenishment | Internal
     "revisionNo": 1,                     // Document version (1 = first issue)
 
@@ -35,7 +35,7 @@
 	  "dateToShip": "2025-07-01",           // 
 	  "orderItemType": "STANDARD",			// Standard | Trial
 	  "firmDateToShip": true,
- 
+
       /* ---------- Shipping Parties ---------- */
       "shipper": {
         "shipperId": "6770",                // Shipper no (not consignee no)

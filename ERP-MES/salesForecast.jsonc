@@ -1,0 +1,24 @@
+[
+  {
+    "customer":  { "customerId": "26636", "customerName": "Norkol Inc." },   // Sold‑to / billing
+    "consignee": { "consigneeId": "5445", "consigneeName": "Norkol" },       // Ship‑to
+
+    "grade": "NPA59ST",
+    "allocationYear": 2025,
+
+    // Per‑month allocations (weights in tonnes)
+    "monthlyAllocations": [
+      {
+        "allocationMonth": 1,            // January
+        "weightPlannedTonnes": 2000,     // Planned tonnage (yearly planning)
+        "weightAllocatedTonnes": 2300
+      },
+      /* … months 2 – 11 … */
+      {
+        "allocationMonth": 12,           // December
+        "weightPlannedTonnes": 2000,
+        "weightAllocatedTonnes": 2100
+      }
+    ]
+  }
+]
