@@ -42,21 +42,19 @@
     "qualityStatus": "SALE",
 	"downgradeReason": null,
 
-    "isStenciled":   true,
-    "rewrapCount":   0,
-     "wrap":          "Single Wrap",
-      "labelMark":     null
- 
     /* ---------- Product details ---------- */
     "product": {
       "sku":           "NPL59ST-PLND D106.7 W63.5",
       "grade":         "NPL59ST",
       "core":          "PLND",
-	  "width":         63.5, 
-	  "diameter":      106.7,
+      "width":         63.5, 
+      "diameter":      106.7,
       "rollsPerPack":  1,
     },
 
+    "wrap":          "Single Wrap",
+    "labelMark":     null
+ 
     /* ---------- Measured Dimensions ---------- */
     "actualDimensions": { "width": 63.8, "diameter": 106.8 },   // cm
     
