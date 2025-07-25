@@ -57,9 +57,9 @@
         "diameterImperial": 50.0, // inch
         "core": "NPLD",
         "rollPerPack": 1          // 1 | 2
+        "wrapType": "AA",
       },
 
-      "wrapType": "AA",
       "labelMark": "WALGREENS",
 	  "rollPosition": "ANY",   //ANY | NO_END | END
 

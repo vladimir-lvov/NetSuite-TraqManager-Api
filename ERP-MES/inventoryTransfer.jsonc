@@ -1,0 +1,15 @@
+{
+	/* if SourceLineItem absent transfer from stock */
+	"SourceLineItem": 
+	{
+	  "millOrderNumber": 194747,
+	  "millOrderLineNumber": 1
+	},
+	/* if TargetLineItem absent transfer to stock */
+	"TargetLineItem": [
+	{
+	  "millOrderNumber": 194749,
+	  "millOrderLineNumber": 1
+	},
+	"rollsToTransfer": 10
+}
