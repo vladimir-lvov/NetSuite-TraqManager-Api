@@ -1,0 +1,40 @@
+Inventory Audit Codes
+                
+80          ROLL UPGRADED 
+90          ROLL DOWNGRADED 
+110         ROLL PRODUCED AT WINDER                                                 
+300         ROLL WRAPPED ( GOOD ROLL, SALE STATUS )
+310         ROLL REWRAPPED ( SALE)
+320         ROLL WRAPPED ( CULL)
+330         ROLL WRAPPED ( BEAT)
+340         ROLL REWRAPPED ( CULL)
+350         ROLL REWRAPPED ( BEAT)
+360			ROLL BUNDLED
+370			ROLL UNBUNDLED
+401         ROLL TRANSFERRED TO ANOTHER ORDER
+402         ROLL TRANSFERRED TO THE WAREHOUSE LOCATION
+403         ROLL TRANSFERRED TO ANOTHER LOCATION
+550         ROLL LOADED TO VEHICLE (TRUCK, TRAIN, BOAT )                            
+560         ROLL UNLOADED FROM VEHICLE                                              
+600         ROLL SHIPPED
+610         ROLL UNSHIPPED
+615         Roll shipped to remote warehouse
+620         Roll unloaded to remote warehouse
+700         Roll moved to another warehouse (shipper)
+800         ROLL CONSUMED AT CLAMP TRUCK OR BEATER  STATION                                         
+810         BEATER ROLL CONSUMED FROM OFFICE
+
+Quality Roll Statuses:
+BEAT
+HELD
+SALE
+CULL
+
+
+Process Roll Statuses: 
+INPROCESS
+FINISHED
+LOADED
+INTRANSIT (New status introduced in NetSuite integration project)
+SHIPPED (New status introduced in NetSuite integration project)
+DESTROYED
