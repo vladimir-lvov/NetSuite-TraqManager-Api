@@ -6,7 +6,7 @@
 	  "millOrderLineNumber": 1
 	},
 	/* if TargetLineItem absent transfer to stock */
-	"TargetLineItem": [
+	"TargetLineItem": 
 	{
 	  "millOrderNumber": 194749,
 	  "millOrderLineNumber": 1
