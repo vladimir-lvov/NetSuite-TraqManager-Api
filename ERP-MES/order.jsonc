@@ -19,7 +19,9 @@
     },
 
     "orderHeaderNotes": [
-      { "noteType": "Planner", "note": "Urgent order – please expedite delivery." }
+      { 
+        "noteType": "Planner",  // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
+        "note": "Urgent order – please expedite delivery." }
     ]
   },
 
