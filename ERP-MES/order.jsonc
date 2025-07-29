@@ -57,7 +57,7 @@
         "diameterImperial": 50.0, // inch
         "core": "NPLD",
         "rollPerPack": 1,          // 1 | 2
-        "wrapType": "AA",
+        "wrapType": "AAA",
       },
 
       "labelMark": "WALGREENS",
