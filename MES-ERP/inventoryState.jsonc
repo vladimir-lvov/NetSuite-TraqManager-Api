@@ -29,32 +29,7 @@
 
 
     /* ---------- Inventory ---------- */
-    "Inventory": 
-	[
-		{
-			"processStatus": "INTRANSIT",
-			"qualityStatus": "SALE",
-			"rolls":         20,
-			"weight":        20000 //kg
-		},		
-		{
-			"processStatus": "FINISHED",
-			"qualityStatus": "SALE",
-			"rolls":         20,
-			"weight":        20000 //kg
-		},
-		{
-			"processStatus": "FINISHED",
-			"qualityStatus": "HELD",
-			"rolls":         10,
-			"weight":        10000 //kg
-		},
-		{
-			"processStatus": "LOADED",
-			"qualityStatus": "SALE",
-			"rolls":         10,
-			"weight":        10000 //kg
-		}	
-    ]
+	"rolls":         20,
+	"weight":        20000 //kg
   }
 ]
