@@ -72,7 +72,9 @@
 	  "price": 988, // Price per Metric Ton in customer currency for Customs Invoice 
 
       "orderItemNotes": [
-        { "noteType": "Packaging", "note": "Deliver in moisture-resistant packaging." }
+        { 
+          "noteType": "PROD_PLANNER",  // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
+          "note": "Deliver in moisture-resistant packaging." }
       ]
     }
   ]
