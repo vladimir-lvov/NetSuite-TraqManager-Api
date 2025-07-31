@@ -1,0 +1,29 @@
+[
+  {
+    // ===========================
+    // Load Header
+    // ===========================
+    "loadNumber": "FN0626H5",               // load no
+    "loadMesStatus": "OPEN",                // load status code
+    "loadMesStatus": "CONFIRMED",           // load transp status code
+  
+    // ===========================
+    //  State 
+    // ===========================
+    "readyDate": "2025-07-01",              
+    "isReady": true,
+    "estimatedWeight": 19600,
+    "loadedWeight": 19600,   
+  
+    // ===========================
+    //  Transportation 
+    // ===========================
+    "transportInformation": {
+      "carrier": { "carrierId": "5545", "carrierName": "Bison" },
+      "transportMode": "Truck",            // Truck | Rail | Intermodal
+      "equipmentType": "TRTAMDV53" ,       // vehicle_code
+      "equipmentNumber": "T85128576",      // vehicle_no
+      "maxWeight": 200000                  // max weight    
+    }
+  }
+]
