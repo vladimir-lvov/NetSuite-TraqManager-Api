@@ -18,7 +18,7 @@
     // ===========================
     //  Transportation 
     // ===========================
-    "transportInformation": {
+    "transportation": {
       "carrier": { "carrierId": "5545", "carrierName": "Bison" },
       "transportMode": "Truck",            // Truck | Rail | Intermodal
       "equipmentType": "TRTAMDV53" ,       // vehicle_code
