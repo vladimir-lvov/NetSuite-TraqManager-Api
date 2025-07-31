@@ -34,13 +34,11 @@
     "consigneeShipAddressName": "West Gates"
   },
 
-  /* ---------- Optional Carrier ---------- */
-  "carrier": { "carrierId": "5545", "carrierName": "Bison" },
 
   // ===========================
   // Transport requirements
   // ===========================
-  "transportInformation": {
+  "transportation": {
     "transportMode": "Truck",            // Truck | Rail | Intermodal
     "equipmentType": "TRTAMDV53"         // vehicle_code
   },
