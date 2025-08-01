@@ -1,82 +1,7 @@
 [
   {
     "orderLink": {
-      "millOrderNumber": "098481",
-      "millOrderItemNumber": 1,
-      "orderType": "STANDARD"
-    },
-    "shipper": {
-      "shipperId": "3",
-      "shipperName": "ANC Whitecourt Warehouse"
-    },
-    "product": {
-      "sku": "NPA59ST-PLND D127.0 W121.9 R/P:1 AAA",
-      "grade": "NPA59ST",
-      "core": "PLND",
-      "width": 121.9,
-      "widthImeprial": "48",
-      "diameter": 127,
-      "diameterImperial": "50",
-      "rollsPerPack": 1,
-      "wrapType": "AAA"
-    },
-    "rollsFinished": 0,
-    "weightFinished": 0,
-    "readyDate": "2025-07-31T21:06:03.413Z"
-  },
-  {
-    "orderLink": {
-      "millOrderNumber": "098838",
-      "millOrderItemNumber": 1,
-      "orderType": "STANDARD"
-    },
-    "shipper": {
-      "shipperId": "3",
-      "shipperName": "ANC Whitecourt Warehouse"
-    },
-    "product": {
-      "sku": "NPA59ST-PLND D127.0 W121.9 R/P:1 AAA",
-      "grade": "NPA59ST",
-      "core": "PLND",
-      "width": 121.9,
-      "widthImeprial": "48",
-      "diameter": 127,
-      "diameterImperial": "50",
-      "rollsPerPack": 1,
-      "wrapType": "AAA"
-    },
-    "rollsFinished": 0,
-    "weightFinished": 0,
-    "readyDate": "2025-08-07T11:44:56.413Z"
-  },
-  {
-    "orderLink": {
-      "millOrderNumber": "098782",
-      "millOrderItemNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "shipper": {
-      "shipperId": "3",
-      "shipperName": "ANC Whitecourt Warehouse"
-    },
-    "product": {
-      "sku": "NPL59ST-PLND D106.7 W55.9 R/P:2 AAA",
-      "grade": "NPL59ST",
-      "core": "PLND",
-      "width": 55.9,
-      "widthImeprial": "22",
-      "diameter": 106.7,
-      "diameterImperial": "42",
-      "rollsPerPack": 2,
-      "wrapType": "AAA"
-    },
-    "rollsFinished": 1,
-    "weightFinished": 299,
-    "readyDate": "2025-08-03T12:19:40.413Z"
-  },
-  {
-    "orderLink": {
-      "millOrderNumber": "098784",
+      "millOrderNumber": "087000",
       "millOrderItemNumber": 3,
       "orderType": "STANDARD"
     },
@@ -85,23 +10,100 @@
       "shipperName": "ANC Whitecourt Warehouse"
     },
     "product": {
-      "sku": "NPL59ST-PLND D106.7 W55.9 R/P:2 AAA",
+      "sku": "NPL59ST-PLND D127.0 W101.6 R/P:1 AAA",
       "grade": "NPL59ST",
       "core": "PLND",
-      "width": 55.9,
-      "widthImeprial": "22",
-      "diameter": 106.7,
-      "diameterImperial": "42",
-      "rollsPerPack": 2,
+      "width": 101.6,
+      "widthImperial": "40",
+      "diameter": 127,
+      "diameterImperial": "50",
+      "rollsPerPack": 1,
       "wrapType": "AAA"
     },
-    "rollsFinished": 0,
-    "weightFinished": 0,
-    "readyDate": "2025-08-06T03:11:20.413Z"
+    "readyDate": "2025-08-07T20:21:42.413Z",
+    "quantities": [
+      {
+        "qualityStatus": "SALE",
+        "rollsFinished": 62,
+        "weightFinished": 47771,
+        "rollsLoadded": 0,
+        "weightLoaded": 0,
+        "rollsIntransit": 0,
+        "weightIntransit": 0
+      }
+    ]
   },
   {
     "orderLink": {
-      "millOrderNumber": "098717",
+      "millOrderNumber": "087000",
+      "millOrderItemNumber": 10,
+      "orderType": "STANDARD"
+    },
+    "shipper": {
+      "shipperId": "3",
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "product": {
+      "sku": "NPL59ST-PLND D127.0 W152.4 R/P:1 AAA",
+      "grade": "NPL59ST",
+      "core": "PLND",
+      "width": 152.4,
+      "widthImperial": "60",
+      "diameter": 127,
+      "diameterImperial": "50",
+      "rollsPerPack": 1,
+      "wrapType": "AAA"
+    },
+    "readyDate": "2025-08-07T20:46:50.413Z",
+    "quantities": [
+      {
+        "qualityStatus": "SALE",
+        "rollsFinished": 13,
+        "weightFinished": 15200,
+        "rollsLoadded": 0,
+        "weightLoaded": 0,
+        "rollsIntransit": 0,
+        "weightIntransit": 0
+      }
+    ]
+  },
+  {
+    "orderLink": {
+      "millOrderNumber": "087000",
+      "millOrderItemNumber": 16,
+      "orderType": "STANDARD"
+    },
+    "shipper": {
+      "shipperId": "3",
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "product": {
+      "sku": "NPA59ST-PLND D127.0 W99.1 R/P:1 AAA",
+      "grade": "NPA59ST",
+      "core": "PLND",
+      "width": 99.1,
+      "widthImperial": "39",
+      "diameter": 127,
+      "diameterImperial": "50",
+      "rollsPerPack": 1,
+      "wrapType": "AAA"
+    },
+    "readyDate": "2025-08-04T12:20:20.413Z",
+    "quantities": [
+      {
+        "qualityStatus": "SALE",
+        "rollsFinished": 28,
+        "weightFinished": 21282,
+        "rollsLoadded": 0,
+        "weightLoaded": 0,
+        "rollsIntransit": 0,
+        "weightIntransit": 0
+      }
+    ]
+  },
+  {
+    "orderLink": {
+      "millOrderNumber": "098175",
       "millOrderItemNumber": 1,
       "orderType": "STANDARD"
     },
@@ -110,18 +112,61 @@
       "shipperName": "ANC Whitecourt Warehouse"
     },
     "product": {
-      "sku": "NPL59ST-PLND D127.0 W163.8 R/P:1 AAA",
+      "sku": "NPL59ST-PLND D127.0 W86.4 R/P:1 AAA",
       "grade": "NPL59ST",
       "core": "PLND",
-      "width": 163.8,
-      "widthImeprial": "64.5",
+      "width": 86.4,
+      "widthImperial": "34",
       "diameter": 127,
       "diameterImperial": "50",
       "rollsPerPack": 1,
       "wrapType": "AAA"
     },
-    "rollsFinished": 35,
-    "weightFinished": 44411,
-    "readyDate": "2025-08-06T06:16:09.413Z"
+    "readyDate": "2025-08-04T06:24:30.413Z",
+    "quantities": [
+      {
+        "qualityStatus": "SALE",
+        "rollsFinished": 1,
+        "weightFinished": 628,
+        "rollsLoadded": 0,
+        "weightLoaded": 0,
+        "rollsIntransit": 0,
+        "weightIntransit": 0
+      }
+    ]
+  },
+  {
+    "orderLink": {
+      "millOrderNumber": "098401",
+      "millOrderItemNumber": 1,
+      "orderType": "STANDARD"
+    },
+    "shipper": {
+      "shipperId": "3",
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "product": {
+      "sku": "NPA59ST-PLND D127.0 W150.5 R/P:1 AAA",
+      "grade": "NPA59ST",
+      "core": "PLND",
+      "width": 150.5,
+      "widthImperial": "59.25",
+      "diameter": 127,
+      "diameterImperial": "50",
+      "rollsPerPack": 1,
+      "wrapType": "AAA"
+    },
+    "readyDate": "2025-07-31T07:35:19.413Z",
+    "quantities": [
+      {
+        "qualityStatus": "SALE",
+        "rollsFinished": 8,
+        "weightFinished": 9228,
+        "rollsLoadded": 18,
+        "weightLoaded": 20833,
+        "rollsIntransit": 0,
+        "weightIntransit": 0
+      }
+    ]
   }
 ]
