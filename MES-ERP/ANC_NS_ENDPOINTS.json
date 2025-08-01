@@ -1,0 +1,118 @@
+{
+  "SANDBOX2_DEVT" : {
+    "GENERIC_ENDPOINT" : {
+      "description" : "default endpoint, in case the actual endpoint is not yet developed",
+      "id" : "5584",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5584&deploy=1",
+      "script_name" : "ANC RL GENERIC ENDPOINT",
+      "script_id" : "customscript_anc_rl_genericendpoint",
+      "deployment_id" : "customdeploy_anc_rl_genericendpoint",
+      "script_file" : "ANC_RL_GENERIC_ENDPOINT.js"
+    },
+    "FREIGHT_INVOICE" : {
+      "description" : "regular/truck freight invoice",
+      "id" : "5570",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5570&deploy=1",
+      "script_name" : "ANC RL FREIGHT TRANSACTIONS",
+      "script_id" : "customscript_rl_freight_transactions",
+      "deployment_id" : "customdeploy_rl_freight_transactions",
+      "script_file" : "ANC_RL_FREIGHT_TRANSACTIONS.js"
+    },
+    "FREIGHT_RAIL_INVOICE" : {
+      "description" : "rail freight invoice",
+      "id" : "5720",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5720&deploy=1",
+      "script_name" : "ANC RL FREIGHT RAIL INVOICE",
+      "script_id" : "customscript_anc_rl_freight_railinvoie",
+      "deployment_id" : "customdeploy_anc_rl_freight_railinvoie",
+      "script_file" : "ANC_RL_FREIGHT_RAIL_INVOICE.js"
+    },
+    "PRODUCTION_CAPACITY" : {
+      "description" : "production capacity",
+      "id" : "5603",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5603&deploy=1",
+      "script_name" : "ANC RL Production",
+      "script_id" : "customscript_anc_rl_production",
+      "deployment_id" : "customdeploy_anc_rl_production",
+      "script_file" : "ANC_RL_INVENTORY.js"
+    },
+    "SHIPMENT_STATE" : {
+      "description" : "shipment state",
+      "id" : "5845",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5845&deploy=1",
+      "script_name" : "ANC RL SHIPMENT STATE",
+      "script_id" : "customscript_anc_rl_shipmentstate",
+      "deployment_id" : "customdeploy_anc_rl_shipmentstate",
+      "script_file" : "ANC_RL_INVENTORY.js"
+    },
+    "FITMENT_RESPONSE" : {
+      "description" : "this is to be used in the case NS-LOADXPERTFITMENTAPI cannot respond realtime",
+      "id" : "5839",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5839&deploy=1",
+      "script_name" : "ANC RL FITMENT",
+      "script_id" : "customscript_anc_rl_fitment",
+      "deployment_id" : "customdeploy_anc_rl_fitment",
+      "script_file" : "ANC_RL_FITMENT.js"
+    },
+    "ESB_TO_NS_SHIPMENTS" : { //TODO : DO NOT USE THIS, THIS IS MEANT FOR ESB CREATION OF SHIPMENTS WHICH WILL CHANGE SOON.
+      "description" : "this is to allow ESB to support syncing shipments to netsuite (to complement regular freight integration) but will soon be changed because shipments will be synced directly with other shipments",
+      "id" : "5604",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5604&deploy=1",
+      "script_name" : "ANC RL Inventory",
+      "script_id" : "customscript_anc_rl_inventory",
+      "deployment_id" : "customdeploy_anc_rl_inventory",
+      "script_file" : "ANC_RL_INVENTORY.js"
+    },
+    "ESB_TO_NS_SHIPMENTS" : { //TODO : DO NOT USE THIS, THIS IS MEANT FOR ESB CREATION OF SHIPMENTS WHICH WILL CHANGE SOON.
+      "description" : "",
+      "id" : "5604",
+      "url" : "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5604&deploy=1",
+      "script_name" : "ANC RL Inventory",
+      "script_id" : "customscript_anc_rl_inventory",
+      "deployment_id" : "customdeploy_anc_rl_inventory",
+      "script_file" : "ANC_RL_INVENTORY.js"
+    }
+  },
+  //LIVE
+  "LIVE" : {
+    "GENERIC_ENDPOINT" : {
+      "description" : "not yet in live"
+    },
+    "FREIGHT_INVOICE" : {
+      "description" : "regular/truck freight invoice",
+      "id" : "6092",
+      "url" : "https://1116623.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=6092&deploy=1",
+      "script_name" : "ANC RL FREIGHT TRANSACTIONS",
+      "script_id" : "customscript_rl_freight_transactions",
+      "deployment_id" : "customdeploy_rl_freight_transactions",
+      "script_file" : "ANC_RL_FREIGHT_TRANSACTIONS.js"
+    },
+    "FREIGHT_RAIL_INVOICE" : {
+      "description" : "rail freight invoice",
+      "id" : "6492",
+      "url" : "https://1116623.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=6492&deploy=1",
+      "script_name" : "ANC RL FREIGHT RAIL INVOICE",
+      "script_id" : "customscript_anc_rl_freight_railinvoice",
+      "deployment_id" : "customdeploy_anc_rl_freight_railinvoice",
+      "script_file" : "ANC_RL_FREIGHT_RAIL_INVOICE.js"
+    },
+    "PRODUCTION_CAPACITY" : {
+      "description" : "not yet in live"
+    },
+    "SHIPMENT_STATE" : {
+      "description" : "not yet in live"
+    },
+    "FITMENT_RESPONSE" : {
+      "description" : "not yet in live"
+    },
+    "ESB_TO_NS_SHIPMENTS" : { //TODO : DO NOT USE THIS, THIS IS MEANT FOR ESB CREATION OF SHIPMENTS WHICH WILL CHANGE SOON.
+      "description" : "this is to allow ESB to support syncing shipments to netsuite (to complement regular freight integration) but will soon be changed because shipments will be synced directly with other shipments",
+      "id" : "6091",
+      "url" : "https://1116623.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=6091&deploy=2",
+      "script_name" : "ANC RL Inventory",
+      "script_id" : "customscript_anc_rl_inventory",
+      "deployment_id" : "customdeploy_anc_rl_inventory2", //2nd deployment as deploy1 was bugged
+      "script_file" : "ANC_RL_INVENTORY.js"
+    },
+  }
+}
