@@ -5,7 +5,7 @@
     // ===========================
     "loadNumber": "FN0626H5",               // load no
     "loadMesStatus": "OPEN",                // load status code
-    "loadMesStatus": "CONFIRMED",           // load transp status code
+    "loadMesTransportationStatus": "CONFIRMED",           // load transp status code
   
     // ===========================
     //  State 
