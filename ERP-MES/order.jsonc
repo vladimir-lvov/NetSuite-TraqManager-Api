@@ -20,7 +20,7 @@
 
     "orderHeaderNotes": [
       { 
-        "noteType": "WINDER ",           // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
+        "noteType": "WINDER ",           // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER | ...
         "note": "No A-Z rolls."
       }
     ]
@@ -42,9 +42,15 @@
 
       /* ---------- Shipping Parties ---------- */
       "shipper": {
-        "shipperId": "6770",              // Shipper no  (mapped to tm.shipper → tm.consignee)
+        "shipperId": "3",              // Shipper no  (mapped to tm.shipper → tm.consignee)
         "shipperName": "ANC Warehouse"
-      },
+		/* -- Required link to the consignee record --*/
+		"shipperConsignee": {
+			"consigneeId": "6770",
+			"consigneeName": "ANC Warehouse"
+		 }
+	  },
+	  
       "consignee": {
         "consigneeId": "5445",
         "consigneeName": "Norkol"
@@ -72,7 +78,6 @@
       },
       "rolls": 100,                     // Number of whole rolls to ship
       "price": 988,                     // Price per MT (or per uom) in customer currency
-      "weight": 70280,                  // net weight to ship (kg)
       
       "orderItemNotes": [
         { 
