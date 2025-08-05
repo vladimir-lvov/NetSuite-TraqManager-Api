@@ -1,0 +1,299 @@
+{
+  "loadNumber": "F0728TC1",
+  "loadMesStatus": "SHIPPED",
+  "preload": 0,
+  "customer": {
+    "customerId": "5284",
+    "customerName": "Transcontinental Calgary"
+  },
+  "shipper": {
+    "shipperId": "6170",
+    "shipperName": "ANC Whitecourt Warehouse"
+  },
+  "consignee": {
+    "consigneeId": "5672",
+    "consigneeName": "Transcontinental Printing (Calgary)"
+  },
+  "carrier": {
+    "carrierId": "1400",
+    "carrierName": "Loblaw Transport - Canada"
+  },
+  "transport": {
+    "transportMode": "TRUCK",
+    "equipmentType": "TRTAMDV53",
+    "equipmentNumber": "355282",
+    "maxWeight": 21999
+  },
+  "dateLoaded": "2025-07-26T11:46:59Z",
+  "dateShipped": "2025-07-26T17:10:17.500Z",
+  "lineItems": [
+    {
+      "orderLink": {
+        "millOrderNumber": "098569",
+        "millOrderLineupNumber": 1,
+        "orderType": "STANDARD"
+      },
+      "weight": 7085,
+      "rolls": 10,
+      "product": {
+        "sku": "NPM59ST-PLND D127.0 W92.7 R/P:1 AAA",
+        "grade": "NPM59ST",
+        "core": "PLND",
+        "width": 92.7,
+        "widthImperial": "36.5",
+        "diameter": 127,
+        "diameterImperial": "50",
+        "rollsPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "inventoryList": [
+        {
+          "rollId": "AB1G12081E",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-12T13:26:33Z",
+          "grossWeight": 706
+        },
+        {
+          "rollId": "AB1G12081G",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-12T13:26:33Z",
+          "grossWeight": 708
+        },
+        {
+          "rollId": "AB1G13103B",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-13T15:14:25Z",
+          "grossWeight": 716
+        },
+        {
+          "rollId": "AB1G13103H",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-13T15:14:25Z",
+          "grossWeight": 723
+        },
+        {
+          "rollId": "AB1G24262B",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T04:50:42Z",
+          "grossWeight": 708
+        },
+        {
+          "rollId": "AB1G24262Z",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T04:50:42Z",
+          "grossWeight": 711
+        },
+        {
+          "rollId": "AB1G24293E",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T07:21:24Z",
+          "grossWeight": 705
+        },
+        {
+          "rollId": "AB1G24293Z",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T07:21:24Z",
+          "grossWeight": 702
+        },
+        {
+          "rollId": "AB1G24294E",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T07:21:24Z",
+          "grossWeight": 710
+        },
+        {
+          "rollId": "AB1G25011Z",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T08:11:19Z",
+          "grossWeight": 696
+        }
+      ]
+    },
+    {
+      "orderLink": {
+        "millOrderNumber": "098569",
+        "millOrderLineupNumber": 2,
+        "orderType": "STANDARD"
+      },
+      "weight": 9778,
+      "rolls": 9,
+      "product": {
+        "sku": "NPM59ST-PLND D127.0 W142.2 R/P:1 AAA",
+        "grade": "NPM59ST",
+        "core": "PLND",
+        "width": 142.2,
+        "widthImperial": "56",
+        "diameter": 127,
+        "diameterImperial": "50",
+        "rollsPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "inventoryList": [
+        {
+          "rollId": "AB1G24081B",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1079
+        },
+        {
+          "rollId": "AB1G24081D",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1080
+        },
+        {
+          "rollId": "AB1G24081Z",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1086
+        },
+        {
+          "rollId": "AB1G24082B",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1084
+        },
+        {
+          "rollId": "AB1G24082D",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1088
+        },
+        {
+          "rollId": "AB1G24082Z",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1092
+        },
+        {
+          "rollId": "AB1G24083B",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1088
+        },
+        {
+          "rollId": "AB1G24083D",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1088
+        },
+        {
+          "rollId": "AB1G24083Z",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1093
+        }
+      ]
+    },
+    {
+      "orderLink": {
+        "millOrderNumber": "098875",
+        "millOrderLineupNumber": 1,
+        "orderType": "STANDARD"
+      },
+      "weight": 3420,
+      "rolls": 10,
+      "product": {
+        "sku": "HBM63ST-PLND D127.0 W45.7 R/P:2 AAA",
+        "grade": "HBM63ST",
+        "core": "PLND",
+        "width": 45.7,
+        "widthImperial": "18",
+        "diameter": 127,
+        "diameterImperial": "50",
+        "rollsPerPack": 2,
+        "wrapType": "AAA"
+      },
+      "inventoryList": [
+        {
+          "rollId": "AB1G22181D",
+          "bundledRollId": "AB1G22181E",
+          "dateProduced": "2025-07-22T21:02:14Z",
+          "grossWeight": 348
+        },
+        {
+          "rollId": "AB1G22181E",
+          "bundledRollId": "AB1G22181D",
+          "dateProduced": "2025-07-22T21:02:14Z",
+          "grossWeight": 348
+        },
+        {
+          "rollId": "AB1G22293B",
+          "bundledRollId": "AB1G22293C",
+          "dateProduced": "2025-07-23T06:13:41Z",
+          "grossWeight": 343
+        },
+        {
+          "rollId": "AB1G22293C",
+          "bundledRollId": "AB1G22293B",
+          "dateProduced": "2025-07-23T06:13:41Z",
+          "grossWeight": 344
+        },
+        {
+          "rollId": "AB1G22301B",
+          "bundledRollId": "AB1G22301C",
+          "dateProduced": "2025-07-23T07:05:14Z",
+          "grossWeight": 338
+        },
+        {
+          "rollId": "AB1G22301C",
+          "bundledRollId": "AB1G22301B",
+          "dateProduced": "2025-07-23T07:05:14Z",
+          "grossWeight": 338
+        },
+        {
+          "rollId": "AB1G22302B",
+          "bundledRollId": "AB1G22302C",
+          "dateProduced": "2025-07-23T07:05:14Z",
+          "grossWeight": 340
+        },
+        {
+          "rollId": "AB1G22302C",
+          "bundledRollId": "AB1G22302B",
+          "dateProduced": "2025-07-23T07:05:14Z",
+          "grossWeight": 340
+        },
+        {
+          "rollId": "AB1G22303B",
+          "bundledRollId": "AB1G22303C",
+          "dateProduced": "2025-07-23T07:05:14Z",
+          "grossWeight": 340
+        },
+        {
+          "rollId": "AB1G22303C",
+          "bundledRollId": "AB1G22303B",
+          "dateProduced": "2025-07-23T07:05:14Z",
+          "grossWeight": 341
+        }
+      ]
+    },
+    {
+      "orderLink": {
+        "millOrderNumber": "098295",
+        "millOrderLineupNumber": 1,
+        "orderType": "STANDARD"
+      },
+      "weight": 1148,
+      "rolls": 1,
+      "product": {
+        "sku": "NPM59ST-PLND D127.0 W147.3 R/P:1 AAA",
+        "grade": "NPM59ST",
+        "core": "PLND",
+        "width": 147.3,
+        "widthImperial": "58",
+        "diameter": 127,
+        "diameterImperial": "50",
+        "rollsPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "inventoryList": [
+        {
+          "rollId": "AB1G25132G",
+          "bundledRollId": "",
+          "dateProduced": "2025-07-25T17:12:26Z",
+          "grossWeight": 1148
+        }
+      ]
+    }
+  ]
+}

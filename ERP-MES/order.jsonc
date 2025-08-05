@@ -1,16 +1,16 @@
-{
+{ 
   // ===========================
   // Order Header
   // ===========================
   "orderHeader": {
-    "millOrderNumber": "098765",         // Mill / ERP master order
-    "purchaseOrderNumber": "PO12345",    // Customer’s PO reference
-    "referenceNumber": "234525",         // Customer reference
-    "allocationMonth": "2025-07-01",     // First day of the allocation month
-    "lastDateChange": "2025-06-14",      // Optional LDC
-    "orderStatus": "Released",           // Pending |  | Released | Closed | Cancelled
-    "orderType": "Standard",             // Standard | Cull | Replenishment | Internal
-    "revisionNo": 1,                     // Document version (1 = first issue)
+    "millOrderNumber": "098765",          // Mill / ERP master order
+    "purchaseOrderNumber": "PO12345",     // Customer’s PO reference
+    "referenceNumber": "234525",          // Optional Customer reference
+    "allocationMonth": "2025-07-01",      // First day of the allocation month (UTC, ISO-8601)
+    "lastDateChange": "2025-06-14",       // Optional LDC  (UTC, ISO-8601)
+    "orderStatus": "Released",            // Pending | Approved | Released | Closed | Cancelled
+    "orderType": "STANDARD",              // STANDARD | CULL | REPLENISHMENT | INTERNAL
+    "revisionNo": 1,                      // Document version (1 = first issue)
 
     /* ---------- Buyer Party ---------- */
     "customer": {
@@ -20,63 +20,65 @@
 
     "orderHeaderNotes": [
       { 
-        "noteType": "SHIPPING",  // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
-        "note": "Urgent order – please expedite delivery." }
+        "noteType": "WINDER ",           // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
+        "note": "No A-Z rolls."
+      }
     ]
   },
 
   // ===========================
-  // Order Line Items (with dates)
+  // Order Line Items
   // ===========================
   "lineItems": [
     {
       "millOrderLineNumber": 1,
-      "purchaseOrderLineItemNumber": 1,
-      "lineItemStatusType": "Active", 		// Active | Closed | Cancelled
-      "lastDateChange": "2025-06-14",       // Optional LDC
-	  "dateToShip": "2025-07-01",           // 
-	  "orderItemType": "STANDARD",			// Standard | Trial
-	  "firmDateToShip": true,
+      "lineItemStatusType": "Active",     // Active | Closed | Cancelled
+
+      /* ---------- Key Dates ---------- */
+      "dateToShip": "2025-07-01",         // Shipment / production due date (UTC)
+      "firmDateToShip": true,             // When true, date is firm / cannot auto-slide
+      "orderItemType": "STANDARD",        // STANDARD | TRIAL
+      "rollPosition": "ANY",              // ANY | NO_END | END (ordered-roll position requirement)
 
       /* ---------- Shipping Parties ---------- */
       "shipper": {
-        "shipperId": "6770",                // Shipper no (not consignee no)
+        "shipperId": "6770",              // Shipper no  (mapped to tm.shipper → tm.consignee)
         "shipperName": "ANC Warehouse"
       },
       "consignee": {
         "consigneeId": "5445",
         "consigneeName": "Norkol"
       },
-	  
 
-      /* ---------- Product Details ---------- */
+      /* ---------- Product / SKU ---------- */
       "product": {
-        "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",
+        "sku": "NPA59ST-1275-1150-NPLD-AA-RPP1",   // Free-form SKU / product_code
         "grade": "NPA59ST",
-        "width":    127.0,        // cm
-        "diameter": 127.0,        // cm
-        "widthImperial":    50.0, // inch
-        "diameterImperial": 50.0, // inch
-        "core": "NPLD",
-        "rollPerPack": 1,          // 1 | 2
-        "wrapType": "AAA",
+        "width": 127.0,                 // cm  (metric master data)
+        "diameter": 127.0,              // cm
+        "widthImperial": 50.0,          // inch  (optional; stored for reference)
+        "diameterImperial": 50.0,       // inch
+        "core": "NPLD",                 // Core code
+        "rollPerPack": 1,               // 1 | 2
+        "wrapType": "AAA"               // Wrapper code
       },
 
-      "labelMark": "WALGREENS",
-	  "rollPosition": "ANY",   //ANY | NO_END | END
+      "labelMark": "WALGREENS",         // Customer-supplied label / stencil text
 
-      /*Quantity (unist) to ship or produce for relenishment order */
+      /* ---------- Quantities & Pricing ---------- */
       "quantity": { 
-		"value": 122.3, 
-		"uom": "MT"        // ROLLS | MT | LM | MSF | TONS | CSM | LFT | LBS | CWT
-	  },
-      "rolls": 100, // Number of whole rolls to ship
-	  "price": 988, // Price per Metric Ton in customer currency for Customs Invoice 
-
+        "value": 122.3,                 // Primary ordered units (matches uom)
+        "uom": "MT"                     // ROLLS | MT | LM | MSF | TONS | CSM | LFT | LBS | CWT
+      },
+      "rolls": 100,                     // Number of whole rolls to ship
+      "price": 988,                     // Price per MT (or per uom) in customer currency
+      "weight": 70280,                  // net weight to ship (kg)
+      
       "orderItemNotes": [
         { 
-          "noteType": "PROD_PLANNER",  // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
-          "note": "Deliver in moisture-resistant packaging." }
+          "noteType": "PROD_PLANNER",   // SHIPPING | WINDER | PROD_PLANNER | CLAMP_TRUCK | CARRIER | WRAPPER
+          "note": "Deliver in moisture-resistant packaging."
+        }
       ]
     }
   ]
