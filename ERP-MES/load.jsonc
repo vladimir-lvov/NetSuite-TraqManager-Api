@@ -2,7 +2,7 @@
   // ===========================
   // Load Header
   // ===========================
-  "loadNumber": "FN0626H5",               // Unique load ID
+  "loadNumber": "FN0626H5",               // Unique load ID, Only OPEN loads are updateable.
   "loadStatus": "New",                    // New | Amended | Cancelled
   "version": 1,                           // Document version
 
@@ -25,7 +25,17 @@
 
   /* ---------- Parties ---------- */
   "customer":  { "customerId": "26636", "customerName": "Norkol Inc." },   // Sold-to / billing
-  "shipper":   { "shipperId": "6770",  "shipperName": "ANC Warehouse" },  // Origin
+
+  "shipper": {                     // Origin
+	"shipperId": "3",              
+	"shipperName": "ANC Warehouse"
+	/* -- Required link to the consignee associated with the shipper record --*/
+	"shipperConsignee": {
+		"consigneeId": "6770",
+		"consigneeName": "ANC Warehouse"
+	 }
+  },
+	  
   "consignee": { "consigneeId": "5445", "consigneeName": "Norkol" },        // Final delivery
 
   // Optional alternate ship-to
@@ -53,7 +63,6 @@
   // ===========================
   "loadLineItems": [
     {
-      "loadLineupNumber": 1,
       "millOrderNumber": "098765",
       "millOrderLineNumber": 1,
       "rolls": 20,   

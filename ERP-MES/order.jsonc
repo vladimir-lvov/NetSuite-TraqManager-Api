@@ -42,9 +42,9 @@
 
       /* ---------- Shipping Parties ---------- */
       "shipper": {
-        "shipperId": "3",              // Shipper no  (mapped to tm.shipper → tm.consignee)
+        "shipperId": "3",              // Shipper no 
         "shipperName": "ANC Warehouse"
-		/* -- Required link to the consignee record --*/
+		/* -- Link to the consignee associated with the shipper record --*/
 		"shipperConsignee": {
 			"consigneeId": "6770",
 			"consigneeName": "ANC Warehouse"
