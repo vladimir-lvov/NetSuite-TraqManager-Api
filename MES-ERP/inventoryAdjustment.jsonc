@@ -1,616 +1,102 @@
 [
   {
-    "rollId": "AB1F26313C",
-    "setId": "AB1F26313",
-    "reedId": "AB1F2631",
-    "bundledRollId": "",
+    /* ------------------------------------------------------------------ */
+    /*  1. Identification                                                 */
+    /* ------------------------------------------------------------------ */
+    "rollId": "string",                 // unique TAPPI roll ID (10 chars)
+    "setId": "string",                  // 1-st 9 chars of rollId
+    "reedId": "string",                 // 1-st 8 chars of rollId
+    "bundledRollId": "string",          // twin roll ID if bundled; "" when none
+
+    /* ------------------------------------------------------------------ */
+    /*  2. Latest audit event (root-level) –– NEW ----------------------- */
+    /* ------------------------------------------------------------------ */
+    "auditCode": 0,                     // e.g. 90, 401, 560
+    "auditDescription": "string",       // MES audit text
+
+    /* ------------------------------------------------------------------ */
+    /*  3. Timestamps                                                     */
+    /* ------------------------------------------------------------------ */
     "dates": {
-      "produced": "2025-06-27T05:09:51Z",
-      "wrapped": "2025-06-27T07:03:37.440Z",
-      "modified": "2025-07-10T15:13:02.427Z"
+      "produced": "YYYY-MM-DDThh:mm:ssZ",
+      "wrapped":  "YYYY-MM-DDThh:mm:ss.fffZ",
+      "modified": "YYYY-MM-DDThh:mm:ss.fffZ"   // time of latest audit
     },
+
+    /* ------------------------------------------------------------------ */
+    /*  4. Order & (optional) Load links                                  */
+    /* ------------------------------------------------------------------ */
     "orderLink": {
-      "millOrderNumber": "098761",
-      "millOrderLineNumber": 1,
-      "orderType": "STANDARD"
+      "millOrderNumber": "string",
+      "millOrderLineNumber": 0,
+      "orderType": "STANDARD | STOCK | REPLENISHMENT | CULL"
     },
+
+    "loadLink": {                       // NEW – present only when the roll
+      "loadNumber": "string",           // is on a load (loaded, intransit, shipped)
+      "loadMesStatus": "LOADING | SHIPPED | LOADED | OPEN | CANCELLED | SUSPENDED"
+    },
+
+    /* ------------------------------------------------------------------ */
+    /*  5. Business parties                                               */
+    /* ------------------------------------------------------------------ */
     "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
+      "customerId": 0,
+      "customerName": "string"
     },
-    "shipper": {
-      "shipperId": 3,
-      "shipperName": "ANC Whitecourt Warehouse"
+
+    /* ------------------------------------------------------------------ */
+    /*  Location                                              */
+    /* ------------------------------------------------------------------ */
+
+    "shipper": {                        // absent when roll not in warehouse
+      "shipperId": 0,
+      "shipperName": "string"
     },
-    "zone": "T8A",
-    "processStatus": "FINISHED",
-    "lastRollEvent": "ROLL TRANSFERRED TO ANOTHER ORDER",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
+    "zone": "string",                   // e.g. T8A, SH …
+
+    /* ------------------------------------------------------------------ */
+    /*  6. Status                                               */
+    /* ------------------------------------------------------------------ */
+    "processStatus": "FINISHED | LOADED | INTRANSIT | SHIPPED | INPROCESS",
+    "qualityStatus": "SALE | BEAT | CULL | HELD",
+
+    "downgradeReasonCode":        "string",  // NEW – only for BEAT/REJECT
+    "downgradeReasonDescription": "string",  // NEW
+
+    "rewrapCount": 0,                       // how many times rewrapped
+
+    /* ------------------------------------------------------------------ */
+    /*  7. Product spec                                                   */
+    /* ------------------------------------------------------------------ */
     "product": {
-      "sku": "NPL59ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "NPL59ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
+      "sku":        "string",
+      "grade":      "string",
+      "core":       "string",
+      "wrapType":   "string",
+      "width":      0.0,    // cm
+      "diameter":   0,      // cm
       "rollsPerPack": 1
     },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 127
+
+    /* ------------------------------------------------------------------ */
+    /*  8. Measured / physical data                                       */
+    /* ------------------------------------------------------------------ */
+    "actualDimensions": {               // measured
+      "width":    0.0,
+      "diameter": 0.0
     },
     "basisWeight": {
-      "ordered": 43,
-      "actual": 43.26093
+      "ordered": 0.0,
+      "actual":  0.0
     },
-    "length": 17747,
-    "density": 608,
+    "length":  0,                       // metres
+    "density": 0,                       // kg/m³
     "weights": {
-      "estimated": 698,
-      "gross": 708,
-      "net": 704
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:13:02.427Z",
-        "auditCode": 401,
-        "auditDescription": "ROLL TRANSFERRED TO ANOTHER ORDER",
-        "oldValue": "000000-2459",
-        "newValue": "098761-1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1F26313C",
-    "setId": "AB1F26313",
-    "reedId": "AB1F2631",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-06-27T05:09:51Z",
-      "wrapped": "2025-06-27T07:03:37.440Z",
-      "modified": "2025-07-10T15:13:02.427Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098761",
-      "millOrderLineNumber": 1,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "shipper": {
-      "shipperId": 3,
-      "shipperName": "ANC Whitecourt Warehouse"
-    },
-    "zone": "T8A",
-    "processStatus": "FINISHED",
-    "lastRollEvent": "ROLL TRANSFERRED TO ANOTHER ORDER",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "NPL59ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "NPL59ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 127
-    },
-    "basisWeight": {
-      "ordered": 43,
-      "actual": 43.26093
-    },
-    "length": 17747,
-    "density": 608,
-    "weights": {
-      "estimated": 698,
-      "gross": 708,
-      "net": 704
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:13:02.427Z",
-        "auditCode": 401,
-        "auditDescription": "ROLL TRANSFERRED TO ANOTHER ORDER",
-        "oldValue": "000000-2459",
-        "newValue": "098761-1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1F26313E",
-    "setId": "AB1F26313",
-    "reedId": "AB1F2631",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-06-27T05:09:51Z",
-      "wrapped": "2025-06-27T07:04:17.663Z",
-      "modified": "2025-07-10T15:13:02.430Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098761",
-      "millOrderLineNumber": 1,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "shipper": {
-      "shipperId": 3,
-      "shipperName": "ANC Whitecourt Warehouse"
-    },
-    "zone": "T8A",
-    "processStatus": "FINISHED",
-    "lastRollEvent": "ROLL TRANSFERRED TO ANOTHER ORDER",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "NPL59ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "NPL59ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 127
-    },
-    "basisWeight": {
-      "ordered": 43,
-      "actual": 43.38423
-    },
-    "length": 17747,
-    "density": 610,
-    "weights": {
-      "estimated": 698,
-      "gross": 710,
-      "net": 706
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:13:02.430Z",
-        "auditCode": 401,
-        "auditDescription": "ROLL TRANSFERRED TO ANOTHER ORDER",
-        "oldValue": "000000-2459",
-        "newValue": "098761-1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1F26313E",
-    "setId": "AB1F26313",
-    "reedId": "AB1F2631",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-06-27T05:09:51Z",
-      "wrapped": "2025-06-27T07:04:17.663Z",
-      "modified": "2025-07-10T15:13:02.430Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098761",
-      "millOrderLineNumber": 1,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "shipper": {
-      "shipperId": 3,
-      "shipperName": "ANC Whitecourt Warehouse"
-    },
-    "zone": "T8A",
-    "processStatus": "FINISHED",
-    "lastRollEvent": "ROLL TRANSFERRED TO ANOTHER ORDER",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "NPL59ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "NPL59ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 127
-    },
-    "basisWeight": {
-      "ordered": 43,
-      "actual": 43.38423
-    },
-    "length": 17747,
-    "density": 610,
-    "weights": {
-      "estimated": 698,
-      "gross": 710,
-      "net": 706
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:13:02.430Z",
-        "auditCode": 401,
-        "auditDescription": "ROLL TRANSFERRED TO ANOTHER ORDER",
-        "oldValue": "000000-2459",
-        "newValue": "098761-1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1G02231E",
-    "setId": "AB1G02231",
-    "reedId": "AB1G0223",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-07-03T00:18:44Z",
-      "wrapped": "2025-07-03T02:28:39.560Z",
-      "modified": "2025-07-10T15:35:52.620Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098124",
-      "millOrderLineNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "processStatus": "LOADED",
-    "lastRollEvent": "ROLL SHIPPED",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "HBM63ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "HBM63ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 126.8
-    },
-    "basisWeight": {
-      "ordered": 42,
-      "actual": 42.55433
-    },
-    "length": 17836,
-    "density": 603,
-    "weights": {
-      "estimated": 685,
-      "gross": 700,
-      "net": 696
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:35:52.620Z",
-        "auditCode": 600,
-        "auditDescription": "ROLL SHIPPED",
-        "newValue": "F0715FP1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1G02231E",
-    "setId": "AB1G02231",
-    "reedId": "AB1G0223",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-07-03T00:18:44Z",
-      "wrapped": "2025-07-03T02:28:39.560Z",
-      "modified": "2025-07-10T15:35:52.620Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098124",
-      "millOrderLineNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "processStatus": "LOADED",
-    "lastRollEvent": "ROLL SHIPPED",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "HBM63ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "HBM63ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 126.8
-    },
-    "basisWeight": {
-      "ordered": 42,
-      "actual": 42.55433
-    },
-    "length": 17836,
-    "density": 603,
-    "weights": {
-      "estimated": 685,
-      "gross": 700,
-      "net": 696
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:35:52.620Z",
-        "auditCode": 600,
-        "auditDescription": "ROLL SHIPPED",
-        "newValue": "F0715FP1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1G02231E",
-    "setId": "AB1G02231",
-    "reedId": "AB1G0223",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-07-03T00:18:44Z",
-      "wrapped": "2025-07-03T02:28:39.560Z",
-      "modified": "2025-07-10T15:35:52.620Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098124",
-      "millOrderLineNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "processStatus": "LOADED",
-    "lastRollEvent": "ROLL SHIPPED",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "HBM63ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "HBM63ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 126.8
-    },
-    "basisWeight": {
-      "ordered": 42,
-      "actual": 42.55433
-    },
-    "length": 17836,
-    "density": 603,
-    "weights": {
-      "estimated": 685,
-      "gross": 700,
-      "net": 696
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:35:52.620Z",
-        "auditCode": 600,
-        "auditDescription": "ROLL SHIPPED",
-        "newValue": "F0715FP1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1G02231E",
-    "setId": "AB1G02231",
-    "reedId": "AB1G0223",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-07-03T00:18:44Z",
-      "wrapped": "2025-07-03T02:28:39.560Z",
-      "modified": "2025-07-10T15:35:52.620Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098124",
-      "millOrderLineNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "processStatus": "LOADED",
-    "lastRollEvent": "ROLL SHIPPED",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "HBM63ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "HBM63ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 126.8
-    },
-    "basisWeight": {
-      "ordered": 42,
-      "actual": 42.55433
-    },
-    "length": 17836,
-    "density": 603,
-    "weights": {
-      "estimated": 685,
-      "gross": 700,
-      "net": 696
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:35:52.620Z",
-        "auditCode": 600,
-        "auditDescription": "ROLL SHIPPED",
-        "newValue": "F0715FP1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1G02231E",
-    "setId": "AB1G02231",
-    "reedId": "AB1G0223",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-07-03T00:18:44Z",
-      "wrapped": "2025-07-03T02:28:39.560Z",
-      "modified": "2025-07-10T15:35:52.620Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098124",
-      "millOrderLineNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "processStatus": "LOADED",
-    "lastRollEvent": "ROLL SHIPPED",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "HBM63ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "HBM63ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 126.8
-    },
-    "basisWeight": {
-      "ordered": 42,
-      "actual": 42.55433
-    },
-    "length": 17836,
-    "density": 603,
-    "weights": {
-      "estimated": 685,
-      "gross": 700,
-      "net": 696
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:35:52.620Z",
-        "auditCode": 600,
-        "auditDescription": "ROLL SHIPPED",
-        "newValue": "F0715FP1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
-  },
-  {
-    "rollId": "AB1G02231E",
-    "setId": "AB1G02231",
-    "reedId": "AB1G0223",
-    "bundledRollId": "",
-    "dates": {
-      "produced": "2025-07-03T00:18:44Z",
-      "wrapped": "2025-07-03T02:28:39.560Z",
-      "modified": "2025-07-10T15:35:52.620Z"
-    },
-    "orderLink": {
-      "millOrderNumber": "098124",
-      "millOrderLineNumber": 2,
-      "orderType": "STANDARD"
-    },
-    "customer": {
-      "customerId": 5941,
-      "customerName": "Norkol Inc./ Fisher Printing Bridgeview"
-    },
-    "processStatus": "LOADED",
-    "lastRollEvent": "ROLL SHIPPED",
-    "qualityStatus": "SALE",
-    "rewrapCount": 0,
-    "product": {
-      "sku": "HBM63ST-PLND D127.0 W91.4 R/P:1 AAA",
-      "grade": "HBM63ST",
-      "core": "PLND",
-      "wrapType": "AAA",
-      "width": 91.4,
-      "diameter": 127,
-      "rollsPerPack": 1
-    },
-    "wrap": "Single Wrap",
-    "actualDimensions": {
-      "width": 91.8,
-      "diameter": 126.8
-    },
-    "basisWeight": {
-      "ordered": 42,
-      "actual": 42.55433
-    },
-    "length": 17836,
-    "density": 603,
-    "weights": {
-      "estimated": 685,
-      "gross": 700,
-      "net": 696
-    },
-    "inventoryAudits": [
-      {
-        "auditDate": "2025-07-10T15:35:52.620Z",
-        "auditCode": 600,
-        "auditDescription": "ROLL SHIPPED",
-        "newValue": "F0715FP1",
-        "oldQualityStatus": "SALE",
-        "newQualityStatus": "SALE"
-      }
-    ]
+      "estimated": 0,                   // kg
+      "gross":     0,
+      "net":       0
+    }
   }
 ]
+

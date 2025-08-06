@@ -1,0 +1,458 @@
+[
+  {
+    "rollId": "AB1W26023B",
+    "setId": "AB1W26023",
+    "reedId": "AB1W2602",
+    "bundledRollId": "AB1W26023C",
+    "dates": {
+      "produced": "2024-09-26T08:11:01Z",
+      "wrapped": "2024-09-26T10:16:29.267Z",
+      "modified": "2025-08-06T14:36:18.260Z"
+    },
+    "auditCode": 90,
+    "auditDescription": "ROLL DOWNGRADED ",
+    "orderLink": {
+      "millOrderNumber": "000000",
+      "millOrderLineNumber": 4234,
+      "orderType": "STOCK"
+    },
+    "customer": {
+      "customerId": 5319,
+      "customerName": "ANC STOCK"
+    },
+    "shipper": {
+      "shipperId": 58,
+      "shipperName": "Alberta Newsprint Company c/o York Warehousing & Distn Inc"
+    },
+    "zone": "SH",
+    "processStatus": "FINISHED",
+    "qualityStatus": "BEAT",
+    "downgradeReasonCode": "402",
+    "downgradeReasonDescription": "NO STOCK",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "BSCR127-PLND-D127.0-W57.8-RP2-AAA",
+      "grade": "BSCR127",
+      "core": "PLND",
+      "wrapType": "AAA",
+      "width": 57.8,
+      "diameter": 127,
+      "rollsPerPack": 2
+    },
+    "actualDimensions": {
+      "width": 58,
+      "diameter": 126.7
+    },
+    "basisWeight": {
+      "ordered": 59.2,
+      "actual": 59.22301
+    },
+    "length": 10504,
+    "density": 495,
+    "weights": {
+      "estimated": 359,
+      "gross": 363,
+      "net": 361
+    }
+  },
+  {
+    "rollId": "AB1W26023C",
+    "setId": "AB1W26023",
+    "reedId": "AB1W2602",
+    "bundledRollId": "AB1W26023B",
+    "dates": {
+      "produced": "2024-09-26T08:11:01Z",
+      "wrapped": "2024-09-26T10:16:29.297Z",
+      "modified": "2025-08-06T14:36:18.260Z"
+    },
+    "auditCode": 90,
+    "auditDescription": "ROLL DOWNGRADED ",
+    "orderLink": {
+      "millOrderNumber": "000000",
+      "millOrderLineNumber": 4234,
+      "orderType": "STOCK"
+    },
+    "customer": {
+      "customerId": 5319,
+      "customerName": "ANC STOCK"
+    },
+    "shipper": {
+      "shipperId": 58,
+      "shipperName": "Alberta Newsprint Company c/o York Warehousing & Distn Inc"
+    },
+    "zone": "SH",
+    "processStatus": "FINISHED",
+    "qualityStatus": "BEAT",
+    "downgradeReasonCode": "402",
+    "downgradeReasonDescription": "NO STOCK",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "BSCR127-PLND-D127.0-W57.8-RP2-AAA",
+      "grade": "BSCR127",
+      "core": "PLND",
+      "wrapType": "AAA",
+      "width": 57.8,
+      "diameter": 127,
+      "rollsPerPack": 2
+    },
+    "actualDimensions": {
+      "width": 58,
+      "diameter": 126.7
+    },
+    "basisWeight": {
+      "ordered": 59.2,
+      "actual": 59.22301
+    },
+    "length": 10504,
+    "density": 495,
+    "weights": {
+      "estimated": 359,
+      "gross": 363,
+      "net": 361
+    }
+  },
+  {
+    "rollId": "AB1W26023B",
+    "setId": "AB1W26023",
+    "reedId": "AB1W2602",
+    "bundledRollId": "AB1W26023C",
+    "dates": {
+      "produced": "2024-09-26T08:11:01Z",
+      "wrapped": "2024-09-26T10:16:29.267Z",
+      "modified": "2025-08-06T14:36:18.407Z"
+    },
+    "auditCode": 401,
+    "auditDescription": "ROLL TRANSFERRED TO ANOTHER ORDER",
+    "orderLink": {
+      "millOrderNumber": "000000",
+      "millOrderLineNumber": 4234,
+      "orderType": "STOCK"
+    },
+    "customer": {
+      "customerId": 5319,
+      "customerName": "ANC STOCK"
+    },
+    "shipper": {
+      "shipperId": 58,
+      "shipperName": "Alberta Newsprint Company c/o York Warehousing & Distn Inc"
+    },
+    "zone": "SH",
+    "processStatus": "FINISHED",
+    "qualityStatus": "BEAT",
+    "downgradeReasonCode": "402",
+    "downgradeReasonDescription": "NO STOCK",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "BSCR127-PLND-D127.0-W57.8-RP2-AAA",
+      "grade": "BSCR127",
+      "core": "PLND",
+      "wrapType": "AAA",
+      "width": 57.8,
+      "diameter": 127,
+      "rollsPerPack": 2
+    },
+    "actualDimensions": {
+      "width": 58,
+      "diameter": 126.7
+    },
+    "basisWeight": {
+      "ordered": 59.2,
+      "actual": 59.22301
+    },
+    "length": 10504,
+    "density": 495,
+    "weights": {
+      "estimated": 359,
+      "gross": 363,
+      "net": 361
+    }
+  },
+  {
+    "rollId": "AB1W26023C",
+    "setId": "AB1W26023",
+    "reedId": "AB1W2602",
+    "bundledRollId": "AB1W26023B",
+    "dates": {
+      "produced": "2024-09-26T08:11:01Z",
+      "wrapped": "2024-09-26T10:16:29.297Z",
+      "modified": "2025-08-06T14:36:18.410Z"
+    },
+    "auditCode": 401,
+    "auditDescription": "ROLL TRANSFERRED TO ANOTHER ORDER",
+    "orderLink": {
+      "millOrderNumber": "000000",
+      "millOrderLineNumber": 4234,
+      "orderType": "STOCK"
+    },
+    "customer": {
+      "customerId": 5319,
+      "customerName": "ANC STOCK"
+    },
+    "shipper": {
+      "shipperId": 58,
+      "shipperName": "Alberta Newsprint Company c/o York Warehousing & Distn Inc"
+    },
+    "zone": "SH",
+    "processStatus": "FINISHED",
+    "qualityStatus": "BEAT",
+    "downgradeReasonCode": "402",
+    "downgradeReasonDescription": "NO STOCK",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "BSCR127-PLND-D127.0-W57.8-RP2-AAA",
+      "grade": "BSCR127",
+      "core": "PLND",
+      "wrapType": "AAA",
+      "width": 57.8,
+      "diameter": 127,
+      "rollsPerPack": 2
+    },
+    "actualDimensions": {
+      "width": 58,
+      "diameter": 126.7
+    },
+    "basisWeight": {
+      "ordered": 59.2,
+      "actual": 59.22301
+    },
+    "length": 10504,
+    "density": 495,
+    "weights": {
+      "estimated": 359,
+      "gross": 363,
+      "net": 361
+    }
+  },
+  {
+    "rollId": "AB1G26181E",
+    "setId": "AB1G26181",
+    "reedId": "AB1G2618",
+    "bundledRollId": "",
+    "dates": {
+      "produced": "2025-07-26T22:20:36Z",
+      "wrapped": "2025-07-26T23:35:37.073Z",
+      "modified": "2025-08-06T14:53:03.587Z"
+    },
+    "auditCode": 560,
+    "auditDescription": "ROLL UNLOADED FROM VEHICLE                                              ",
+    "orderLink": {
+      "millOrderNumber": "098641",
+      "millOrderLineNumber": 1,
+      "orderType": "STANDARD"
+    },
+    "loadLink": {
+      "loadNumber": "F0728WF1",
+      "loadMesStatus": "LOADING"
+    },
+    "customer": {
+      "customerId": 5312,
+      "customerName": "Winnipeg Free Press"
+    },
+    "shipper": {
+      "shipperId": 3,
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "zone": "T1A",
+    "processStatus": "LOADED",
+    "qualityStatus": "SALE",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "NPA59ST-BVBD-D127.0-W127.0-RP1-AAA",
+      "grade": "NPA59ST",
+      "core": "BVBD",
+      "wrapType": "AAA",
+      "width": 127,
+      "diameter": 127,
+      "rollsPerPack": 1
+    },
+    "actualDimensions": {
+      "width": 127.3,
+      "diameter": 126.9
+    },
+    "basisWeight": {
+      "ordered": 40,
+      "actual": 41.45102
+    },
+    "length": 18480,
+    "density": 608,
+    "weights": {
+      "estimated": 939,
+      "gross": 980,
+      "net": 976
+    }
+  },
+  {
+    "rollId": "AB1G26181E",
+    "setId": "AB1G26181",
+    "reedId": "AB1G2618",
+    "bundledRollId": "",
+    "dates": {
+      "produced": "2025-07-26T22:20:36Z",
+      "wrapped": "2025-07-26T23:35:37.073Z",
+      "modified": "2025-08-06T14:57:11.807Z"
+    },
+    "auditCode": 407,
+    "auditDescription": "ROLL NUMBER IS TYPED IN BY AN OPERATOR",
+    "orderLink": {
+      "millOrderNumber": "098641",
+      "millOrderLineNumber": 1,
+      "orderType": "STANDARD"
+    },
+    "loadLink": {
+      "loadNumber": "F0728WF1",
+      "loadMesStatus": "LOADING"
+    },
+    "customer": {
+      "customerId": 5312,
+      "customerName": "Winnipeg Free Press"
+    },
+    "shipper": {
+      "shipperId": 3,
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "zone": "T1A",
+    "processStatus": "LOADED",
+    "qualityStatus": "SALE",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "NPA59ST-BVBD-D127.0-W127.0-RP1-AAA",
+      "grade": "NPA59ST",
+      "core": "BVBD",
+      "wrapType": "AAA",
+      "width": 127,
+      "diameter": 127,
+      "rollsPerPack": 1
+    },
+    "actualDimensions": {
+      "width": 127.3,
+      "diameter": 126.9
+    },
+    "basisWeight": {
+      "ordered": 40,
+      "actual": 41.45102
+    },
+    "length": 18480,
+    "density": 608,
+    "weights": {
+      "estimated": 939,
+      "gross": 980,
+      "net": 976
+    }
+  },
+  {
+    "rollId": "AB1G26181E",
+    "setId": "AB1G26181",
+    "reedId": "AB1G2618",
+    "bundledRollId": "",
+    "dates": {
+      "produced": "2025-07-26T22:20:36Z",
+      "wrapped": "2025-07-26T23:35:37.073Z",
+      "modified": "2025-08-06T14:57:12.127Z"
+    },
+    "auditCode": 403,
+    "auditDescription": "ROLL TRANSFERRED TO ANOTHER LOCATION",
+    "orderLink": {
+      "millOrderNumber": "098641",
+      "millOrderLineNumber": 1,
+      "orderType": "STANDARD"
+    },
+    "loadLink": {
+      "loadNumber": "F0728WF1",
+      "loadMesStatus": "LOADING"
+    },
+    "customer": {
+      "customerId": 5312,
+      "customerName": "Winnipeg Free Press"
+    },
+    "shipper": {
+      "shipperId": 3,
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "zone": "T1A",
+    "processStatus": "LOADED",
+    "qualityStatus": "SALE",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "NPA59ST-BVBD-D127.0-W127.0-RP1-AAA",
+      "grade": "NPA59ST",
+      "core": "BVBD",
+      "wrapType": "AAA",
+      "width": 127,
+      "diameter": 127,
+      "rollsPerPack": 1
+    },
+    "actualDimensions": {
+      "width": 127.3,
+      "diameter": 126.9
+    },
+    "basisWeight": {
+      "ordered": 40,
+      "actual": 41.45102
+    },
+    "length": 18480,
+    "density": 608,
+    "weights": {
+      "estimated": 939,
+      "gross": 980,
+      "net": 976
+    }
+  },
+  {
+    "rollId": "AB1G26181E",
+    "setId": "AB1G26181",
+    "reedId": "AB1G2618",
+    "bundledRollId": "",
+    "dates": {
+      "produced": "2025-07-26T22:20:36Z",
+      "wrapped": "2025-07-26T23:35:37.073Z",
+      "modified": "2025-08-06T14:57:12.130Z"
+    },
+    "auditCode": 550,
+    "auditDescription": "ROLL LOADED TO VEHICLE (TRUCK, TRAIN, BOAT )                            ",
+    "orderLink": {
+      "millOrderNumber": "098641",
+      "millOrderLineNumber": 1,
+      "orderType": "STANDARD"
+    },
+    "loadLink": {
+      "loadNumber": "F0728WF1",
+      "loadMesStatus": "LOADING"
+    },
+    "customer": {
+      "customerId": 5312,
+      "customerName": "Winnipeg Free Press"
+    },
+    "shipper": {
+      "shipperId": 3,
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "zone": "T1A",
+    "processStatus": "LOADED",
+    "qualityStatus": "SALE",
+    "rewrapCount": 0,
+    "product": {
+      "sku": "NPA59ST-BVBD-D127.0-W127.0-RP1-AAA",
+      "grade": "NPA59ST",
+      "core": "BVBD",
+      "wrapType": "AAA",
+      "width": 127,
+      "diameter": 127,
+      "rollsPerPack": 1
+    },
+    "actualDimensions": {
+      "width": 127.3,
+      "diameter": 126.9
+    },
+    "basisWeight": {
+      "ordered": 40,
+      "actual": 41.45102
+    },
+    "length": 18480,
+    "density": 608,
+    "weights": {
+      "estimated": 939,
+      "gross": 980,
+      "net": 976
+    }
+  }
+]
