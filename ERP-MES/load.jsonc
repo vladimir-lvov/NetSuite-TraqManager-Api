@@ -48,7 +48,7 @@
   // ===========================
   // Transport requirements
   // ===========================
-  "transportation": {
+  "transport": {
     "transportMode": "Truck",            // Truck | Rail | Intermodal
     "equipmentType": "TRTAMDV53"         // vehicle_code
   },
