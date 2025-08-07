@@ -16,7 +16,14 @@
     "postalCode": "M4B 1B3",
     "country": "CA"
   },
-
+  
+  //Optional destination that is used for transporation (CN) and ovewrites the consignee city
+ "destination": {						
+    "destinationName": "Toronto West Yard",
+    "region": "ON",
+    "country": "CA"
+  },
+  
   // Child ship-to gates / docks
   "consigneeShipAddresses": [
     {

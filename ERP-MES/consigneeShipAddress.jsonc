@@ -12,6 +12,13 @@
      /* standard address group*/
   },
  
+  //Optional destination that is used for transporation (CN) and ovewrites the consignee city
+ "destination": {						
+    "destinationName": "Toronto West Yard",
+    "region": "ON",
+    "country": "CA"
+  },
+
   "notes": [
     { "noteType": "Shipping", "note": "Credit check before shipping" }
   ]
