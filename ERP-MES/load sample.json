@@ -1,0 +1,53 @@
+{
+  "loadNumber": "F0812DP2",
+  "loadStatus": "New",
+  "version": 1,
+  "loadMethod": "END",
+  "dateToShip": "2025-08-07T00:00:00",
+  "dateToDeliver": "2025-08-12T00:00:00",
+  "firmDateToShip": false,
+  "customer": {
+    "customerId": "5579",
+    "customerName": "Dow Jones & Company, Inc. - Denver"
+  },
+  "shipper": {
+    "shipperId": "3",
+    "shipperName": "ANC Whitecourt Warehouse",
+    "shipperConsignee": {
+      "consigneeId": "6170",
+      "consigneeName": "ANC Whitecourt Warehouse"
+    }
+  },
+  "consignee": {
+    "consigneeId": "6493",
+    "consigneeName": "Denver Post"
+  },
+  "carrier": {
+    "carrierId": "1396",
+    "carrierName": "Start to Finish Logistics"
+  },
+  "transport": {
+    "transportMode": "TRUCK",
+    "equipmentType": "TRTAMDV53"
+  },
+  "loadLineItems": [
+    {
+      "millOrderNumber": "098974",
+      "millOrderLineNumber": 1,
+      "rolls": 5,
+      "shipInFull": false
+    },
+    {
+      "millOrderNumber": "098974",
+      "millOrderLineNumber": 2,
+      "rolls": 14,
+      "shipInFull": true
+    },
+    {
+      "millOrderNumber": "098974",
+      "millOrderLineNumber": 3,
+      "rolls": 12,
+      "shipInFull": true
+    }
+  ]
+}

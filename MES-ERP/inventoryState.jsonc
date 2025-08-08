@@ -2,7 +2,7 @@
   {
     "orderLink": {
       "millOrderNumber": "087000",
-      "millOrderItemNumber": 3,
+      "millOrderLineNumber": 3,
       "orderType": "STANDARD"
     },
     "shipper": {
@@ -36,7 +36,7 @@
   {
     "orderLink": {
       "millOrderNumber": "087000",
-      "millOrderItemNumber": 10,
+      "millOrderLineNumber": 10,
       "orderType": "STANDARD"
     },
     "shipper": {
@@ -70,7 +70,7 @@
   {
     "orderLink": {
       "millOrderNumber": "087000",
-      "millOrderItemNumber": 16,
+      "millOrderLineNumber": 16,
       "orderType": "STANDARD"
     },
     "shipper": {
@@ -104,7 +104,7 @@
   {
     "orderLink": {
       "millOrderNumber": "098175",
-      "millOrderItemNumber": 1,
+      "millOrderLineNumber": 1,
       "orderType": "STANDARD"
     },
     "shipper": {
@@ -138,7 +138,7 @@
   {
     "orderLink": {
       "millOrderNumber": "098401",
-      "millOrderItemNumber": 1,
+      "millOrderLineNumber": 1,
       "orderType": "STANDARD"
     },
     "shipper": {

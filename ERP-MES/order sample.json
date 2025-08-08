@@ -1,0 +1,130 @@
+{
+  "orderHeader": {
+    "millOrderNumber": "098974",
+    "purchaseOrderNumber": "4500048404",
+    "allocationMonth": "2025-08-01T00:00:00Z",
+    "orderStatus": "Released",
+    "orderType": "STANDARD",
+    "revisionNo": 0,
+    "customer": {
+      "customerId": "5579",
+      "customerName": "Dow Jones & Company, Inc. - Denver"
+    },
+    "orderHeaderNotes": [
+      {
+        "noteType": "ORDER_CONFIRMATION",
+        "note": "Deliver Aug 12th and 13th"
+      }
+    ]
+  },
+  "lineItems": [
+    {
+      "millOrderLineNumber": 1,
+      "lineItemStatusType": "Active",
+      "dateToShip": "2025-08-07T00:00:00Z",
+      "firmDateToShip": false,
+      "orderItemType": "STANDARD",
+      "rollPosition": "ANY",
+      "shipper": {
+        "shipperId": "3",
+        "shipperName": "ANC Whitecourt Warehouse",
+        "shipperConsignee": {
+          "consigneeId": "6170",
+          "consigneeName": "ANC Whitecourt Warehouse"
+        }
+      },
+      "consignee": {
+        "consigneeId": "6493",
+        "consigneeName": "Denver Post"
+      },
+      "product": {
+        "sku": "NPL59ST-BEVD-D127.0-W121.9-RP1-AAA",
+        "grade": "NPL59ST",
+        "width": 121.9,
+        "diameter": 127,
+        "widthImperial": 48,
+        "diameterImperial": 50,
+        "core": "BEVD",
+        "rollPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "quantity": {
+        "value": 44,
+        "uom": "MT"
+      },
+      "rolls": 47
+    },
+    {
+      "millOrderLineNumber": 2,
+      "lineItemStatusType": "Active",
+      "dateToShip": "2025-08-07T00:00:00Z",
+      "firmDateToShip": false,
+      "orderItemType": "STANDARD",
+      "rollPosition": "ANY",
+      "shipper": {
+        "shipperId": "3",
+        "shipperName": "ANC Whitecourt Warehouse",
+        "shipperConsignee": {
+          "consigneeId": "6170",
+          "consigneeName": "ANC Whitecourt Warehouse"
+        }
+      },
+      "consignee": {
+        "consigneeId": "6493",
+        "consigneeName": "Denver Post"
+      },
+      "product": {
+        "sku": "NPL59ST-BEVD-D127.0-W91.4-RP1-AAA",
+        "grade": "NPL59ST",
+        "width": 91.4,
+        "diameter": 127,
+        "widthImperial": 36,
+        "diameterImperial": 50,
+        "core": "BEVD",
+        "rollPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "quantity": {
+        "value": 10,
+        "uom": "MT"
+      },
+      "rolls": 14
+    },
+    {
+      "millOrderLineNumber": 3,
+      "lineItemStatusType": "Active",
+      "dateToShip": "2025-08-07T00:00:00Z",
+      "firmDateToShip": false,
+      "orderItemType": "STANDARD",
+      "rollPosition": "ANY",
+      "shipper": {
+        "shipperId": "3",
+        "shipperName": "ANC Whitecourt Warehouse",
+        "shipperConsignee": {
+          "consigneeId": "6170",
+          "consigneeName": "ANC Whitecourt Warehouse"
+        }
+      },
+      "consignee": {
+        "consigneeId": "6493",
+        "consigneeName": "Denver Post"
+      },
+      "product": {
+        "sku": "NPL59ST-BEVD-D127.0-W61.0-RP2-AAA",
+        "grade": "NPL59ST",
+        "width": 61,
+        "diameter": 127,
+        "widthImperial": 24,
+        "diameterImperial": 50,
+        "core": "BEVD",
+        "rollPerPack": 2,
+        "wrapType": "AAA"
+      },
+      "quantity": {
+        "value": 6,
+        "uom": "MT"
+      },
+      "rolls": 12
+    }
+  ]
+}

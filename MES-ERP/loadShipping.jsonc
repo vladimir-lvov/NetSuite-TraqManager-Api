@@ -30,7 +30,7 @@
     {
       "orderLink": {
         "millOrderNumber": "098569",
-        "millOrderLineupNumber": 1,
+        "millOrderLineNumber": 1,
         "orderType": "STANDARD"
       },
       "weight": 7085,
