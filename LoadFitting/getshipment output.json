@@ -1,0 +1,57 @@
+[
+  {
+    "shipments": [
+      {
+        "shipmentNumber": 1,
+        "shipmentItems": [
+          {
+            "itemId": "12",
+            "nb": 26
+          }
+        ],
+        "loadingPattern": null,
+        "base64Image": ""
+      },
+      {
+        "shipmentNumber": 2,
+        "shipmentItems": [
+          {
+            "itemId": "12",
+            "nb": 2
+          },
+          {
+            "itemId": "11",
+            "nb": 25
+          }
+        ],
+        "loadingPattern": null,
+        "base64Image": ""
+      },
+      {
+        "shipmentNumber": 3,
+        "shipmentItems": [
+          {
+            "itemId": "11",
+            "nb": 27
+          }
+        ],
+        "loadingPattern": null,
+        "base64Image": ""
+      },
+      {
+        "shipmentNumber": 4,
+        "shipmentItems": [
+          {
+            "itemId": "11",
+            "nb": 18
+          }
+        ],
+        "loadingPattern": null,
+        "base64Image": ""
+      }
+    ],
+    "correlationId": "1deb5507-3f92-4b99-a2ab-e6ca81e3d5f2",
+    "isSuccess": true,
+    "errorMessage": ""
+  }
+]
