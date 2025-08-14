@@ -1,6 +1,6 @@
 [
   {
-    "correlationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "correlationId": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
     "jurisdictionName": "Canada",
     "vehicleName": "TRTAMDV53",
     "transportationMode": "TRUCK",
@@ -10,7 +10,7 @@
         "Diameter": 127,
         "Width": 85.09,
         "Weight": 645.2,
-        "Nb": 70,
+        "Nb": 10,
         "Type": 1,
         "RPP": 1
       },

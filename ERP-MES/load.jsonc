@@ -61,10 +61,14 @@
   // ===========================
   // Line items being shipped (at least one should present)
   // ===========================
-  "loadLineItems": [
+    
+  "lineItems": [
     {
-      "millOrderNumber": "098765",
-      "millOrderLineNumber": 1,
+      "orderLink": {
+        "millOrderNumber": "098569",
+        "millOrderLineNumber": 1,
+        "orderType": "STANDARD"
+      },
       "rolls": 20,   
       "shipInFull": true
     }

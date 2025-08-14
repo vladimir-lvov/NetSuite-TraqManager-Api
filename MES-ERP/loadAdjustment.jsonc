@@ -1,0 +1,71 @@
+{
+  // ===========================
+  // Load Adjustment (delta to shipped/loaded content)
+  // ===========================
+  "loadNumber": "F0728TC1",                 // Load identifier
+  "loadMesStatus": "SHIPPED",               // MES status at the time of adjustment
+  "dateLoaded": "2025-07-26T11:46:59Z",     // Original load completion time (if known)
+  "dateShipped": "2025-07-26T17:10:17.500Z",// Original ship time (if known)
+  "dateAdjusted": "2025-07-26T17:10:17.500Z",// When this adjustment was recorded
+
+  "lineItems": [
+    {
+      // Link to the specific order line this adjustment affects
+      "orderLink": {
+        "millOrderNumber": "098569",        // Order number in mill system
+        "millOrderLineNumber": 1,           // Line number within the order
+        "orderType": "STANDARD"             // STANDARD | CULL | etc.
+      },
+
+      // Rolls added to the load after initial confirmation
+      "inventoryAdded": [
+        {
+          "rollId": "AB1G12081E",
+          "bundleMateRollId": "",
+          "dateProduced": "2025-07-12T13:26:33Z",
+          "grossWeight": 706
+        },
+        {
+          "rollId": "AB1G12081G",
+          "bundleMateRollId": "",
+          "dateProduced": "2025-07-12T13:26:33Z",
+          "grossWeight": 708
+        }
+      ],
+
+      // Rolls removed from the load (returned to inventory)
+      "rollsRemoved": []
+    },
+
+    {
+      "orderLink": {
+        "millOrderNumber": "098569",
+        "millOrderLineNumber": 2,           // renamed from millOrderLineupNumber
+        "orderType": "STANDARD"
+      },
+
+      "inventoryAdded": [],
+
+      "inventoryRemoved": [
+        {
+          "rollId": "AB1G24081B",
+          "bundleMateRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1079
+        },
+        {
+          "rollId": "AB1G24081D",
+          "bundleMateRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1080
+        },
+        {
+          "rollId": "AB1G24081Z",
+          "bundleMateRollId": "",
+          "dateProduced": "2025-07-24T14:04:19Z",
+          "grossWeight": 1086
+        }
+      ]
+    }
+  ]
+}

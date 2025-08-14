@@ -1,31 +1,23 @@
 {
   "loadNumber": "F0728TC1",
   "loadMesStatus": "SHIPPED",
-  "preload": 0,
-  "customer": {
-    "customerId": "5284",
-    "customerName": "Transcontinental Calgary"
-  },
-  "shipper": {
-    "shipperId": "6170",
-    "shipperName": "ANC Whitecourt Warehouse"
-  },
-  "consignee": {
-    "consigneeId": "5672",
-    "consigneeName": "Transcontinental Printing (Calgary)"
-  },
-  "carrier": {
-    "carrierId": "1400",
-    "carrierName": "Loblaw Transport - Canada"
-  },
+  "preload": true,
+  
+  "customer": {"customerId": "5284", "customerName": "Transcontinental Calgary"},
+  "shipper": {"shipperId": "6170", "shipperName": "ANC Whitecourt Warehouse"},
+  "consignee": {"consigneeId": "5672","consigneeName": "Transcontinental Printing (Calgary)"},
+  "consigneeShipAddress": {"consigneeShipAddressId": "45235",  "consigneeShipAddressName": "West Gates"}, // Optional alternate ship-to
+  "carrier": {"carrierId": "1400","carrierName": "Loblaw Transport - Canada"},
+  
   "transport": {
     "transportMode": "TRUCK",
     "equipmentType": "TRTAMDV53",
-    "equipmentNumber": "355282",
-    "maxWeight": 21999
+    "equipmentNumber": "355282"
   },
+  
   "dateLoaded": "2025-07-26T11:46:59Z",
   "dateShipped": "2025-07-26T17:10:17.500Z",
+  
   "lineItems": [
     {
       "orderLink": {
@@ -33,8 +25,8 @@
         "millOrderLineNumber": 1,
         "orderType": "STANDARD"
       },
-      "weight": 7085,
-      "rolls": 10,
+      "weight": 7085,   // sum of line rolls
+      "rolls": 10,      // count of line rolls 
       "product": {
         "sku": "NPM59ST-PLND D127.0 W92.7 R/P:1 AAA",
         "grade": "NPM59ST",
@@ -46,7 +38,7 @@
         "rollsPerPack": 1,
         "wrapType": "AAA"
       },
-      "inventoryList": [
+      "inventoryShipped": [
         {
           "rollId": "AB1G12081E",
           "bundledRollId": "",
@@ -112,7 +104,7 @@
     {
       "orderLink": {
         "millOrderNumber": "098569",
-        "millOrderLineupNumber": 2,
+        "millOrderLineNumber": 2,
         "orderType": "STANDARD"
       },
       "weight": 9778,
@@ -128,7 +120,7 @@
         "rollsPerPack": 1,
         "wrapType": "AAA"
       },
-      "inventoryList": [
+      "inventoryShipped": [
         {
           "rollId": "AB1G24081B",
           "bundledRollId": "",
@@ -188,7 +180,7 @@
     {
       "orderLink": {
         "millOrderNumber": "098875",
-        "millOrderLineupNumber": 1,
+        "millOrderLineNumber": 1,
         "orderType": "STANDARD"
       },
       "weight": 3420,
@@ -204,7 +196,7 @@
         "rollsPerPack": 2,
         "wrapType": "AAA"
       },
-      "inventoryList": [
+      "inventoryShipped": [
         {
           "rollId": "AB1G22181D",
           "bundledRollId": "AB1G22181E",
@@ -270,7 +262,7 @@
     {
       "orderLink": {
         "millOrderNumber": "098295",
-        "millOrderLineupNumber": 1,
+        "millOrderLineNumber": 1,
         "orderType": "STANDARD"
       },
       "weight": 1148,
@@ -286,7 +278,7 @@
         "rollsPerPack": 1,
         "wrapType": "AAA"
       },
-      "inventoryList": [
+      "inventoryShipped": [
         {
           "rollId": "AB1G25132G",
           "bundledRollId": "",
