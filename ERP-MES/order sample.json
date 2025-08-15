@@ -1,19 +1,19 @@
 {
   "orderHeader": {
-    "millOrderNumber": "098974",
-    "purchaseOrderNumber": "4500048404",
-    "allocationMonth": "2025-08-01T00:00:00Z",
+    "millOrderNumber": "099597",
+    "purchaseOrderNumber": "4500048402",
+    "allocationMonth": "2025-08-06T00:00:00Z",
     "orderStatus": "Released",
     "orderType": "STANDARD",
     "revisionNo": 0,
     "customer": {
-      "customerId": "5579",
-      "customerName": "Dow Jones & Company, Inc. - Denver"
+      "customerId": "5985",
+      "customerName": "Dow Jones & Company, Inc. - Concord"
     },
     "orderHeaderNotes": [
       {
         "noteType": "ORDER_CONFIRMATION",
-        "note": "Deliver Aug 12th and 13th"
+        "note": "Deliver: Augt 6th, 13th and 20th. "
       }
     ]
   },
@@ -21,7 +21,7 @@
     {
       "millOrderLineNumber": 1,
       "lineItemStatusType": "Active",
-      "dateToShip": "2025-08-07T00:00:00Z",
+      "dateToShip": "2025-08-06T00:00:00Z",
       "firmDateToShip": false,
       "orderItemType": "STANDARD",
       "rollPosition": "ANY",
@@ -34,30 +34,30 @@
         }
       },
       "consignee": {
-        "consigneeId": "6493",
-        "consigneeName": "Denver Post"
+        "consigneeId": "6844",
+        "consigneeName": "Bay Area News Group"
       },
       "product": {
-        "sku": "NPL59ST-BEVD-D127.0-W121.9-RP1-AAA",
+        "sku": "NPL59ST-BVBD-D127.0-W111.8-RP1-AAA",
         "grade": "NPL59ST",
-        "width": 121.9,
+        "width": 111.8,
         "diameter": 127,
-        "widthImperial": 48,
+        "widthImperial": 44,
         "diameterImperial": 50,
-        "core": "BEVD",
+        "core": "BVBD",
         "rollPerPack": 1,
         "wrapType": "AAA"
       },
       "quantity": {
-        "value": 44,
+        "value": 18.9,
         "uom": "MT"
       },
-      "rolls": 47
+      "rolls": 22
     },
     {
       "millOrderLineNumber": 2,
       "lineItemStatusType": "Active",
-      "dateToShip": "2025-08-07T00:00:00Z",
+      "dateToShip": "2025-08-13T00:00:00Z",
       "firmDateToShip": false,
       "orderItemType": "STANDARD",
       "rollPosition": "ANY",
@@ -70,30 +70,30 @@
         }
       },
       "consignee": {
-        "consigneeId": "6493",
-        "consigneeName": "Denver Post"
+        "consigneeId": "6844",
+        "consigneeName": "Bay Area News Group"
       },
       "product": {
-        "sku": "NPL59ST-BEVD-D127.0-W91.4-RP1-AAA",
+        "sku": "NPL59ST-BVBD-D127.0-W111.8-RP1-AAA",
         "grade": "NPL59ST",
-        "width": 91.4,
+        "width": 111.8,
         "diameter": 127,
-        "widthImperial": 36,
+        "widthImperial": 44,
         "diameterImperial": 50,
-        "core": "BEVD",
+        "core": "BVBD",
         "rollPerPack": 1,
         "wrapType": "AAA"
       },
       "quantity": {
-        "value": 10,
+        "value": 18.9,
         "uom": "MT"
       },
-      "rolls": 14
+      "rolls": 22
     },
     {
       "millOrderLineNumber": 3,
       "lineItemStatusType": "Active",
-      "dateToShip": "2025-08-07T00:00:00Z",
+      "dateToShip": "2025-08-20T00:00:00Z",
       "firmDateToShip": false,
       "orderItemType": "STANDARD",
       "rollPosition": "ANY",
@@ -106,25 +106,97 @@
         }
       },
       "consignee": {
-        "consigneeId": "6493",
-        "consigneeName": "Denver Post"
+        "consigneeId": "6844",
+        "consigneeName": "Bay Area News Group"
       },
       "product": {
-        "sku": "NPL59ST-BEVD-D127.0-W61.0-RP2-AAA",
+        "sku": "NPL59ST-BVBD-D127.0-W111.8-RP1-AAA",
         "grade": "NPL59ST",
-        "width": 61,
+        "width": 111.8,
         "diameter": 127,
-        "widthImperial": 24,
+        "widthImperial": 44,
         "diameterImperial": 50,
-        "core": "BEVD",
-        "rollPerPack": 2,
+        "core": "BVBD",
+        "rollPerPack": 1,
         "wrapType": "AAA"
       },
       "quantity": {
-        "value": 6,
+        "value": 18.9,
         "uom": "MT"
       },
-      "rolls": 12
+      "rolls": 22
+    },
+    {
+      "millOrderLineNumber": 4,
+      "lineItemStatusType": "Active",
+      "dateToShip": "2025-08-27T00:00:00Z",
+      "firmDateToShip": false,
+      "orderItemType": "STANDARD",
+      "rollPosition": "ANY",
+      "shipper": {
+        "shipperId": "3",
+        "shipperName": "ANC Whitecourt Warehouse",
+        "shipperConsignee": {
+          "consigneeId": "6170",
+          "consigneeName": "ANC Whitecourt Warehouse"
+        }
+      },
+      "consignee": {
+        "consigneeId": "6844",
+        "consigneeName": "Bay Area News Group"
+      },
+      "product": {
+        "sku": "NPL59ST-BVBD-D127.0-W111.8-RP1-AAA",
+        "grade": "NPL59ST",
+        "width": 111.8,
+        "diameter": 127,
+        "widthImperial": 44,
+        "diameterImperial": 50,
+        "core": "BVBD",
+        "rollPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "quantity": {
+        "value": 18.9,
+        "uom": "MT"
+      },
+      "rolls": 22
+    },
+    {
+      "millOrderLineNumber": 5,
+      "lineItemStatusType": "Active",
+      "dateToShip": "2025-08-06T00:00:00Z",
+      "firmDateToShip": false,
+      "orderItemType": "STANDARD",
+      "rollPosition": "ANY",
+      "shipper": {
+        "shipperId": "3",
+        "shipperName": "ANC Whitecourt Warehouse",
+        "shipperConsignee": {
+          "consigneeId": "6170",
+          "consigneeName": "ANC Whitecourt Warehouse"
+        }
+      },
+      "consignee": {
+        "consigneeId": "6844",
+        "consigneeName": "Bay Area News Group"
+      },
+      "product": {
+        "sku": "NPL59ST-BVBD-D127.0-W83.8-RP1-AAA",
+        "grade": "NPL59ST",
+        "width": 83.8,
+        "diameter": 127,
+        "widthImperial": 33,
+        "diameterImperial": 50,
+        "core": "BVBD",
+        "rollPerPack": 1,
+        "wrapType": "AAA"
+      },
+      "quantity": {
+        "value": 19.38,
+        "uom": "MT"
+      },
+      "rolls": 30
     }
   ]
 }
