@@ -9,7 +9,7 @@
     "allocationMonth": "2025-07-01",      // First day of the allocation month (UTC, ISO-8601)
     "lastDateChange": "2025-06-14",       // Optional LDC  (UTC, ISO-8601)
     "orderStatus": "Released",            // Pending | Approved | Released | Closed | Cancelled
-    "orderType": "STANDARD",              // STANDARD | CULL | REPLENISHMENT | INTERNAL
+    "orderType": "STANDARD",              // STANDARD | CULL | CUSTOMER_STOCK | STOCK
     "revisionNo": 1,                      // Document version (1 = first issue)
 
     /* ---------- Buyer Party ---------- */
