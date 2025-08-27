@@ -1,0 +1,17 @@
+{
+    "shipper": {
+      "shipperId": "3",
+      "shipperName": "ANC Whitecourt Warehouse"
+    },
+    "product": {
+      "sku": "NPL59ST-PLND D127.0 W152.4 R/P:1 AAA",
+      "grade": "NPL59ST",
+      "core": "PLND",
+      "width": 152.4,
+      "widthImperial": "60",
+      "diameter": 127,
+      "diameterImperial": "50",
+      "rollsPerPack": 1,
+      "wrapType": "AAA"
+    }
+}
