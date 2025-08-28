@@ -80,6 +80,15 @@
             "script_id": "customscript_TM_RL_QUERY",
             "deployment_id": "customdeploy_TM_RL_QUERY",
             "script_file": "TM_RL_QUERY.js"
+        },
+		"LOAD_READY": {
+            "description": "endpoint that accept the load ready state payload",
+            "id": "5854",
+            "url": "https://1116623-sb2.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=5854&deploy=1",
+            "script_name": "TM_RL_LOAD.js",
+            "script_id": "customscript_TM_RL_LOAD",
+            "deployment_id": "customdeploy_TM_RL_LOAD",
+            "script_file": "TM_RL_LOAD.js"
         }
     },
     "LIVE": {
