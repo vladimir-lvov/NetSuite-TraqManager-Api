@@ -1,0 +1,28 @@
+[
+  {
+    "carrierParentId": "1127",
+    "netAmount": 2984.855,
+    "harmonizedSalesAmount": 0,
+    "nonassignedCarrierAccessorials": [],
+    "invoiceDate": "2025-09-03T15:10:41.9877446-06:00",
+    "acctCode": null,
+    "controlCustomerNumber": "6170",
+    "loadID": "F0820NI1",
+    "equipmentType": "TRTAMDV53",
+    "rate": 2230,
+    "rateQualifier": "FC",
+    "goodsServicesAmount": 0,
+    "methodOfPayment": "P",
+    "lineHaul": 2230,
+    "minimumCharge": 0,
+    "invoiceNumber": null,
+    "currency": "CAD",
+    "accessorials": [],
+    "carrierID": "1399",
+    "provincialSalesAmount": 0,
+    "fuelSurcharge": 754.855,
+    "fuelSurchargeQualifier": "PW",
+    "apiType": "INVOICE_UPDATE",
+    "isFinalInvoice": true
+  }
+]
